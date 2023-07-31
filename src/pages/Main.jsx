@@ -6,7 +6,6 @@ import Section03 from "../components/main/Section03";
 import Section04 from "../components/main/Section04";
 import Section05 from "../components/main/Section05";
 import Section06 from "../components/main/Section06";
-import '../styles/main.css';
 
 const Main = () => (
   <div className="main">
