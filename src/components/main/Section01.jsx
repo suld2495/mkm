@@ -3,7 +3,7 @@ const Section01 = () => (
     <div className="main-title">
       <h2>
         <strong>
-          고객은 언제나 바쁘니까,<br />
+          고객은 언제나 바쁘니까<span className="gmarket">,</span><br />
           물류 배송의 모든 것 엠케이엠에 맡기세오.
         </strong>
       </h2>

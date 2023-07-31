@@ -26,3 +26,7 @@ input:-webkit-autofill {
 button {
   cursor: pointer;
 }
+
+.gmarket {
+  font-family: 'GmarketSansMedium', sans-serif;
+}

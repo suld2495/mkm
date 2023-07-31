@@ -30,7 +30,7 @@
 }
 
 .main .banner h1 {
-  font-size: var(--main-title-font-size);
+  font-size: 50px;
   color: #fff;
   line-height: 1.4;
   margin-bottom: 42px;
@@ -175,6 +175,7 @@
 
 .main .section02 .list li span.title {
   font-size: 26px;
+  font-weight: bold;
 }
 
 .main .section02 .list li:nth-child(1) {
@@ -264,13 +265,22 @@
   gap: 40px;
 }
 
+.main .section03 .list li:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
 .main .section03 .list li {
   height: 275px;
   padding: 62px 0 0 42px;
   box-sizing: border-box;
   color: #fff;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  background-size: 100%;
+  transition: all 0.3s ease;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .main .section03 .list li span {
