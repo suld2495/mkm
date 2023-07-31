@@ -249,7 +249,7 @@
 
 .main .section03 .main-title h2 {
   color: #222;
-  margin-bottom: 45px;
+  margin-bottom: 21px;
 }
 .main .section03 .main-title h2 span {
   color: var(--main-color);
@@ -314,12 +314,12 @@
 
 .main .section04 {
   background-color: #eff2f7;
-  padding: 117px 0 128px 0;
+  padding: 95px 0 109px;
 }
 
 .main .section04 .main-title h2 {
   color: #222;
-  margin-bottom: 50px;
+  margin-bottom: 41px;
 }
 
 .main .section04 .main-title h2 span {
@@ -334,12 +334,12 @@
 }
 
 .main .section04 .list li {
-  height: 288px;
+  height: 268px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-color: #fff;
   border-radius: 10px;
-  padding: 50px 0;
+  padding: 46px 0;
   text-align: center;
 }
 
@@ -365,7 +365,7 @@
 }
 
 .main .section04 ul:nth-of-type(1) {
-  margin-bottom: 105px;
+  margin-bottom: 56px;
 }
 
 .main .section05 {
