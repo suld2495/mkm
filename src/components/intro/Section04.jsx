@@ -1,8 +1,8 @@
 const Section03 = () => (
-  <section className="section03">
+  <section className="section04">
     <div className="center">
       <div className="main-title">
-        <span>OUR STORY</span>
+        <span className="sub-top-text">OUR STORY</span>
         <h2>
           우리가 만든
           <strong>
@@ -20,12 +20,12 @@ const Section03 = () => (
           </div>
         </div>
         <div className="right">
-          <span>A사</span>
           <div>
             <img src="/images/intro/company07.png" />
             <span>MKM과 우리는</span>
             <strong>같은 성장 그래프를 그리고 있어요</strong>
           </div>
+          <span>A사</span>
         </div>
         <div className="left">
           <span>B사</span>
@@ -36,12 +36,12 @@ const Section03 = () => (
           </div>
         </div>
         <div className="right">
-          <span>C사</span>
           <div>
             <img src="/images/intro/company07.png" />
             <span>저희처럼 성장단계에서 있는 회사라면</span>
             <strong>MKM이 큰 도움이 될거에요</strong>
           </div>
+          <span>C사</span>
         </div>
       </div>
     </div>

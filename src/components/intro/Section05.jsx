@@ -1,8 +1,8 @@
 const Section03 = () => (
-  <section className="section03">
+  <section className="section05">
     <div className="center">
       <div className="main-title">
-        <span>TRUST MKM</span>
+        <span className="sub-top-text">TRUST MKM</span>
         <h2>
           고객의 성공이 우리의 행복이라 믿는 
           <strong>
