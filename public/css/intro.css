@@ -76,21 +76,28 @@
   align-items: center;
 }
 
+.section02 .sub01 .img + div p {
+  color: #222;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+
 .intro .section02 .sub01 .imgbox + div p {
   color: #222;
   font-size: 19px;
   line-height: 1.7;
 }
 
-.intro .section02 .sub01 .imgbox + div p:first-child {
+.section02 .sub01 .img + div p:first-child {
   margin-bottom: 30px;
 }
 
-.intro .section02 .sub01 .imgbox + div p strong {
+.section02 .sub01 .img + div p strong {
   font-weight: bold;
 }
 
-.intro .section02 .sub01 .imgbox + div p .color {
+.section02 .sub01 .img + div p .color {
   color: var(--main-color);
 }
 
