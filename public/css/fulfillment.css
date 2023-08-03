@@ -136,20 +136,24 @@
   transition: all 0.3s ease;
 }
 
-.fulfillment .section03 .content li:hover {
+.fulfillment .section03 .content li:hover,
+.fulfillment .section03 .content li.active {
   border: 1px solid var(--main-color);
   
 }
 
-.fulfillment .section03 .content li:hover span {
+.fulfillment .section03 .content li:hover span,
+.fulfillment .section03 .content li.active span {
   color: var(--main-color);   
 }
 
-.fulfillment .section03 .content li:hover span:last-child {
+.fulfillment .section03 .content li:hover span:last-child,
+.fulfillment .section03 .content li.active span:last-child {
   background: #ecf6ff;
 }
 
-.fulfillment .section03 li:hover .list div {
+.fulfillment .section03 li:hover .list div,
+.fulfillment .section03 .content li.active .list div {
   background-image: url(/images/fulfillment/check_icon_over.png);
 }
 

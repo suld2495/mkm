@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const data = [
   {
     title: '업무 계약',
@@ -25,46 +27,60 @@ const data = [
   }
 ]
 
-const Section03 = () => (
-  <section className="section03">
-    <div className="center">
-      <div className="main-title">
-        <h2>
-          <strong>
-            간단해서 더 좋은
-            <span className="color">
-              엠케이엠 프로세스
-            </span>
-          </strong>
-        </h2>
-        <p className="sub-text">
-          계약부터 정산까지
-        </p>
-      </div>
+const Section03 = () => {
+  const [active, setActive] = useState(0);
 
-      <div className="content">
-        <ul>
-          {
-            data.map(({ list, title }, index) => (
-              <li key={index}>
-                <div className="header">
-                  <span>{`STEP${index}`}</span>
-                  <span>{title}</span>
-                </div>
-                <div className="list">
-                  {
-                    list.map((value, i) => (
-                      <div key={i}>{value}</div>
-                    ))
-                  }
-                </div>
-              </li>
-            ))
-          }
-        </ul>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((active + 1) % 6);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    }
+  }, [active]);
+
+  return (
+    <section className="section03">
+      <div className="center">
+        <div className="main-title">
+          <h2>
+            <strong>
+              간단해서 더 좋은
+              <span className="color">
+                엠케이엠 프로세스
+              </span>
+            </strong>
+          </h2>
+          <p className="sub-text">
+            계약부터 정산까지
+          </p>
+        </div>
+  
+        <div className="content">
+          <ul>
+            {
+              data.map(({ list, title }, index) => (
+                <li key={index} className={`${active === index ? 'active' : ''}`}>
+                  <div className="header">
+                    <span>{`STEP${index + 1}`}</span>
+                    <span>{title}</span>
+                  </div>
+                  <div className="list">
+                    {
+                      list.map((value, i) => (
+                        <div key={i}>{value}</div>
+                      ))
+                    }
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default Section03;
