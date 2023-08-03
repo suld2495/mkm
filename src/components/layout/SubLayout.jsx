@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import SubBanner from "./SubBanner";
 
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
       <Header />
       <SubBanner />
       {children}
+      <Footer />
     </>
   );
 };

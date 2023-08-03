@@ -284,3 +284,111 @@ header.header .line-btn:hover span:nth-child(2) {
   transform: translateY(0px);
   transition: max-height 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
+
+footer {
+  padding: 54px 0 40px 0;
+  background: #eff2f7;
+}
+
+footer .center > div {
+  display: flex;
+}
+
+footer .center > div:first-child {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #cdcecf;
+  margin-bottom: 40px;
+}
+
+footer .center > div .logo {
+  padding-right: 45px;
+}
+
+footer .center > div .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+footer .center > div .info > div {
+  display: flex;
+  position: relative;
+}
+
+footer .center > div .info > div:last-child,
+footer .center > div .info > div:first-child,
+footer .center > div .info > div > div {
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+footer .center > div .info > div:not(:first-child):not(:last-child) {
+  gap: 35px;
+}
+
+footer .center > div .info span {
+  font-size: 15px;
+  color: #7f7f81;
+}
+
+footer .center > div .info span.title {
+  color: #555555;
+  font-weight: bold;
+}
+
+footer .center > div .info > div > div + div:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #bfbfbf;
+  left: -17px;
+  top: 1px;
+}
+
+footer .customer {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+footer .center > div:last-child {
+  display: flex;
+  justify-content: space-between
+}
+
+footer .center > div:last-child > span {
+  color: #c4c5c9;
+  font-size: 15px;
+}
+
+footer .center > div:last-child > span + div {
+  display: flex;
+  gap: 50px;
+  
+}
+
+footer .center > div:last-child > span + div a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer .center > div:last-child > span + div a:first-child {
+  color: #8b8c8e;
+}
+
+footer .center > div:last-child > span + div a:last-child {
+  color: var(--main-color);
+}
+
+footer .customer > div:first-child {
+  color: #555;
+  font-weight: bold;
+}
+
+footer .customer > div + div {
+  color: #7f7f81;
+}
