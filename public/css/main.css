@@ -330,6 +330,7 @@
 }
 
 .main .section04 .list li img {
+  margin-inline: auto;
   margin-bottom: 25px;
 }
 
@@ -383,49 +384,4 @@
 .main .section05 .img {
   overflow: hidden;
   border-radius: 25px;
-}
-
-.main .section06 {
-  padding: 89px 0 76px 0;
-  background-image: url(/images/main/mainbanner02.jpg)
-}
-
-.main .section06 .main-title {
-  text-align: center;
-}
-
-.main .section06 .main-title span {
-  width: 180px;
-  height: 43px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  border: 1px solid #fff;
-  color: #fff;
-  margin: 0 auto;
-  font-size: 19px;
-  font-weight: bold;
-  margin-bottom: 26px;
-}
-
-.main .section06 .main-title h2 {
-  margin-bottom: 30px;
-}
-
-.main .section06 a {
-  width: 201px;
-  height: 54px;
-  display: inline-flex;
-  background-color: var(--main-color);
-  background-image: url(/images/main/btn_arrow.png);
-  background-repeat: no-repeat;
-  background-position-y: 19px;
-  background-position-x: 123px;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  color: #fff;
-  padding-right: 16px;
-  box-sizing: border-box;
 }

@@ -1,61 +1,54 @@
-.sub-title {
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section01 {
+.intro .section01 {
   margin-top: 50px;
   position: relative;
   margin-bottom: 100px;
 }
 
-.section01 .center {
+.intro .section01 .center {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.section01 .fulfillment .left {
+.intro .section01 .fulfillment .left {
   width: 43%;
 }
 
-.section01 .left > p:first-child {
+.intro .section01 .left > p:first-child {
   font-size: 22px;
   color: #b8b8b8;
   margin-bottom: 24px;
 }
 
-.section01 .left h2 {
+.intro .section01 .left h2 {
   font-size: 43px;
   font-weight: bold;
   line-height: 1.3;
   margin-bottom: 46px;
 }
 
-.section01 .left h2 span {
+.intro .section01 .left h2 span {
   display: block;
   color: var(--main-color);
 }
 
-.section01 .left > div p {
+.intro .section01 .left > div p {
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 45px;
 }
 
-.section01 .left p strong {
+.intro .section01 .left p strong {
   font-weight: bold;
   color: #222;
 }
 
-.section01 img {
+.intro .section01 img {
   position: relative;
   z-index: 1;
 }
 
-.section01 .img:before {
+.intro .section01 .img:before {
   position: absolute;
   content: '';
   width: calc(50% - 100px);
@@ -66,70 +59,70 @@
   right: 0;
 }
 
-.section02 {
+.intro .section02 {
   background-color: #eff3f7;
   padding-top: 110px;
   padding-bottom: 100px;
 }
 
-.section02 .main-title h2 {
+.intro .section02 .main-title h2 {
   color: #222;
 }
 
-.section02 .sub01 {
+.intro .section02 .sub01 {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section02 .sub01 .img + div p {
+.intro .section02 .sub01 .img + div p {
   color: #222;
   font-size: 19px;
   line-height: 1.7;
 }
 
-.section02 .sub01 .img + div p:first-child {
+.intro .section02 .sub01 .img + div p:first-child {
   margin-bottom: 30px;
 }
 
-.section02 .sub01 .img + div p strong {
+.intro .section02 .sub01 .img + div p strong {
   font-weight: bold;
 }
 
-.section02 .sub01 .img + div p .color {
+.intro .section02 .sub01 .img + div p .color {
   color: var(--main-color);
 }
 
-.section02 .sub02 {
+.intro .section02 .sub02 {
   margin-top: 80px;
 }
 
-.section02 .sub02 .main-title {
+.intro .section02 .sub02 .main-title {
   margin-bottom: 50px;
 }
 
-.section02 .sub02 ul {
+.intro .section02 .sub02 ul {
   display: flex;
   gap: 40px;
 }
 
-.section02 .sub02 .img {
+.intro .section02 .sub02 .img {
   overflow: hidden;
   border-radius: 20px;
 }
 
-.section02 .sub02 img {
+.intro .section02 .sub02 img {
   width: 100%;
   display: block;
   transition: all 0.3s ease;
 }
 
-.section02 .sub02 .img:hover img {
+.intro .section02 .sub02 .img:hover img {
   transform: scale(1.1);
 }
 
-.section02 .sub02 ul p {
+.intro .section02 .sub02 ul p {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
@@ -137,15 +130,15 @@
   margin-top: 20px;
 }
 
-.section03 .center {
+.intro .section03 .center {
   padding: 100px 0 100px 0;
 }
 
-.section03 .center img {
+.intro .section03 .center img {
   padding-bottom: 60px;
 }
 
-.section03 .center p {
+.intro .section03 .center p {
   text-align: center;
   font-size: 18px;
   color: #222;
@@ -153,40 +146,40 @@
   word-break: keep-all;
 }
 
-.section03 .center p:first-child {
+.intro .section03 .center p:first-child {
   margin-bottom: 30px;
 }
 
-.section03 .center p strong {
+.intro .section03 .center p strong {
   font-weight: bold;
 }
 
-.section04 {
+.intro .section04 {
   background: #eff2f7;
   padding: 105px 0 100px 0;
 }
 
-.section04 h2 {
+.intro .section04 h2 {
   color: #222;
   margin-bottom: 50px;
 }
 
-.section04 h2 strong {
+.intro .section04 h2 strong {
   margin-left: 5px;
 }
 
-.section04 .talk > div {
+.intro .section04 .talk > div {
   display: flex;
   gap: 20px;
 }
 
-.section04 .talk > div > span {
+.intro .section04 .talk > div > span {
   font-size: 20px;
   font-weight: bold;
   width: 50px;
 }
 
-.section04 .talk > div div {
+.intro .section04 .talk > div div {
   width: 495px;
   height: 200px;
   border-radius: 20px;
@@ -198,59 +191,59 @@
   align-items: flex-start;
 }
 
-.section04 .talk > div:first-child {
+.intro .section04 .talk > div:first-child {
   font-size: 30px;
 }
 
-.section04 .talk > div:not(:first-child) {
+.intro .section04 .talk > div:not(:first-child) {
   font-size: 22px;
 }
 
-.section04 .talk > div:not(:first-child) div {
+.intro .section04 .talk > div:not(:first-child) div {
   background: var(--main-color);
   color: #fff;
 }
 
-.section04 .talk > div img {
+.intro .section04 .talk > div img {
   margin-bottom: 20px;
 }
 
-.section04 .left span + div {
+.intro .section04 .left span + div {
   background: #fff;   
 }
 
-.section04 .right {
+.intro .section04 .right {
   justify-content: flex-end;
 }
 
-.section04 .talk > div:first-child span {
+.intro .section04 .talk > div:first-child span {
   margin-bottom: 10px;
 }
 
-.section04 .talk > div:not(:first-child) span {
+.intro .section04 .talk > div:not(:first-child) span {
   margin-bottom: 5px;
 }
 
-.section04 .talk > div strong {
+.intro .section04 .talk > div strong {
   font-weight: bold;
 }
 
-.section05 {
+.intro .section05 {
   padding: 120px 0 110px 0;
 }
 
-.section05 h2 {
+.intro .section05 h2 {
   color: #222;
   margin-bottom: 40px;
 }
 
-.section05 ul {
+.intro .section05 ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 43px;
 }
 
-.section05 ul .img + div {
+.intro .section05 ul .img + div {
   margin-top: 68px;
   border: 1px solid #e1e1e1;
   height: 192px;
@@ -263,7 +256,7 @@
   position: relative;
 }
 
-.section05 ul .img + div:before {
+.intro .section05 ul .img + div:before {
   content: '';
   width: 10px;
   height: 10px;
@@ -275,21 +268,21 @@
   border-radius: 100%;
 }
 
-.section05 ul .img {
+.intro .section05 ul .img {
   /* overflow: hidden; */
   border-radius: 10px;
   position: relative;
 }
 
-.section05 ul .img img {
+.intro .section05 ul .img img {
   transition: all 0.3s ease;
 }
 
-.section05 ul .img:hover img {
+.intro .section05 ul .img:hover img {
   transform: scale(1.1);
 }
 
-.section05 ul .img:after {
+.intro .section05 ul .img:after {
   content: '';
   /* width: 2px; */
   height: 63px;
@@ -300,7 +293,7 @@
   border: 1px dashed var(--main-color);
 }
 
-.section05 ul .img + div:after {
+.intro .section05 ul .img + div:after {
   content: '';
   width: 4px;
   height: 4px;
@@ -312,13 +305,13 @@
   border-radius: 100%;
 }
 
-.section05 ul .img + div  h3 {
+.intro .section05 ul .img + div  h3 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 25px;
 }
 
-.section05 ul .img + div p {
+.intro .section05 ul .img + div p {
   font-size: 18px;
   line-height: 1.4;
   word-break: keep-all;

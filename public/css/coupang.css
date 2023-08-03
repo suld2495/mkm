@@ -1,0 +1,126 @@
+.coupang .section01 {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.coupang .main-title h2 {
+  color: #222;
+}
+
+.coupang .section01 .main-title h2 {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.coupang .section01 .content {
+  width: 100%;
+  height: 215px;
+  background: var(--main-color);
+  padding: 50px 0;
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.coupang .section01 .content h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.coupang .section01 .content p {
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.coupang .section01 .content p strong {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.coupang .section02 {
+  padding: 100px 0 115px 0;
+  background: #eff2f7;
+}
+
+.coupang .section02 .content {
+  margin-top: 65px;
+}
+
+.coupang .section02 .content ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 40px;
+  min-height: 26.0417vw;
+}
+
+.coupang .section02 .content ul li {
+  position: relative;
+  width: 17.8125vw;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(30px 50px 70px rgba(0, 0, 0, 0.15));
+  transition: .4s all ease-out;
+}
+
+.coupang .section02 .content ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 1.8229vw;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.coupang .section02 .content ul li div h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 13px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.coupang .section02 .content ul li div p {
+  font-size: 17px;
+}
+
+
+.coupang .section02 .content ul li:not(.on) {
+  width: 20vw;
+}
+
+.coupang .section02 .content ul li:nth-child(1) {
+  background: url(/images/coupang/coupangshipment01.png) no-repeat center / cover;
+}
+
+.coupang .section02 .content ul li:nth-child(2) {
+  background: url(/images/coupang/coupangshipment02.png) no-repeat center / cover;
+}
+
+.coupang .section02 .content ul li:nth-child(3) {
+  background: url(/images/coupang/coupangshipment03.png) no-repeat center / cover;
+}
+
+.coupang .section02 .content ul li.on {
+  width: 34.875vw;
+}
+
+.coupang .section02 .content ul + p {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+}
+
+.coupang .section02 .content ul + p strong {
+  font-weight: bold;
+}

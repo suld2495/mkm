@@ -1,5 +1,5 @@
-const Section06 = () => (
-  <section className="section06 bottom-banner">
+const Section05 = () => (
+  <section className="section05 bottom-banner">
     <div className="main-title">
       <span>간편 견적 서비스</span>
       <h2>
@@ -9,8 +9,12 @@ const Section06 = () => (
         </strong>
       </h2>
       <a>Click</a>
+      <p>
+        엠케이엠 풀필먼트 서비스에 관한 문의는<br/>
+        고객센터 070-4571-6540 또는 견적안내 1:1 문의를 이용해 주세요.
+      </p>
     </div>
   </section>
 );
 
-export default Section06;
+export default Section05;

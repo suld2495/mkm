@@ -9,6 +9,17 @@ img {
   text-align: center;
 }
 
+.main-title .gray {
+  font-size: var(--main-sub-font-size);
+  color: #b8b8b8;
+  text-align: center;
+  display: block;
+}
+
+.main-title .color {
+  color: var(--main-color);
+}
+
 .main-title p {
   font-size: var(--main-sub-font-size);
   color: #fff;
@@ -36,4 +47,64 @@ img {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bottom-banner {
+  padding: 89px 0 76px 0;
+  background-image: url(/images/main/mainbanner02.jpg)
+}
+
+.bottom-banner .main-title {
+  text-align: center;
+}
+
+.bottom-banner .main-title span {
+  width: 180px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.bottom-banner .main-title h2 {
+  margin-bottom: 30px;
+}
+
+.bottom-banner a {
+  width: 201px;
+  height: 54px;
+  display: inline-flex;
+  background-color: var(--main-color);
+  background-image: url(/images/main/btn_arrow.png);
+  background-repeat: no-repeat;
+  background-position-y: 19px;
+  background-position-x: 123px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.bottom-banner p {
+  margin-top: 50px;
+}
+
+.bottom-banner .main-title h2 strong {
+  color: #fff;
 }
