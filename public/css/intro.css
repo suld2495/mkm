@@ -161,7 +161,7 @@
 
 .intro .section04 h2 {
   color: #222;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .intro .section04 h2 strong {
@@ -174,14 +174,16 @@
 }
 
 .intro .section04 .talk > div > span {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   width: 50px;
 }
 
 .intro .section04 .talk > div div {
-  width: 495px;
+  width: 574px;
+  font-size: 26px;
   height: 200px;
+  line-height: 1.2;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -209,7 +211,7 @@
 }
 
 .intro .section04 .left span + div {
-  background: #fff;   
+  background: #fff;
 }
 
 .intro .section04 .right {
