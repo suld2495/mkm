@@ -285,7 +285,7 @@ header.header .line-btn:hover span:nth-child(2) {
   transition: max-height 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
 
-footer {
+footer.footer {
   padding: 54px 0 40px 0;
   background: #eff2f7;
 }
