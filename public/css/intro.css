@@ -115,7 +115,7 @@
 .intro .section02 .sub02 img {
   width: 100%;
   display: block;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 .intro .section02 .sub02 .img:hover img {
@@ -277,7 +277,7 @@
 }
 
 .intro .section05 ul .img img {
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
   position: relative;
   z-index: 10;
 }
