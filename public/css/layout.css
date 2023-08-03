@@ -202,15 +202,16 @@ header.header .line-btn:hover span:nth-child(2) {
 .sub-banner .pc {
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
+  align-items: center;
 }
 
 .sub-banner .pc h1 {
   color: #fff;
   font-weight: bold;
   font-size: 40px;
+  padding-top: 50px;
 }
 
 .sub-banner .nav {
