@@ -1,6 +1,6 @@
 .coupang .section01 {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 .coupang .main-title h2 {
@@ -21,6 +21,30 @@
   border-radius: 100px;
   text-align: center;
   color: #fff;
+  position: relative;
+}
+
+.coupang .section01 .content:after,
+.coupang .section01 .content:before {
+  content: '';
+  position: absolute;
+  background: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coupang .section01 .content:before {
+  height: 150px;
+  width: 2px;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+
+.coupang .section01 .content:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  bottom: -152px;
 }
 
 .coupang .section01 .content h2 {

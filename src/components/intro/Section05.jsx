@@ -14,8 +14,10 @@ const Section03 = () => (
       <div className="trust">
         <ul>
           <li>
-            <div className="img">
-              <img src="/images/intro/company08.png" />
+            <div className="imgbox">
+              <div className="img">
+                <img src="/images/intro/company08.png" />
+              </div>
             </div>
             <div>
               <h3>정확합니다</h3>
@@ -26,8 +28,10 @@ const Section03 = () => (
             </div>
           </li>
           <li>
-            <div className="img">
-              <img src="/images/intro/company09.png" />
+            <div className="imgbox">
+              <div className="img">
+                <img src="/images/intro/company09.png" />
+              </div>
             </div>
             <div>
               <h3>편리합니다</h3>
@@ -38,8 +42,10 @@ const Section03 = () => (
             </div>
           </li>
           <li>
-            <div className="img">
-              <img src="/images/intro/company10.png" />
+            <div className="imgbox">
+              <div className="img">
+                <img src="/images/intro/company10.png" />
+              </div>
             </div>
             <div>
               <h3>소통합니다</h3>
