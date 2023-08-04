@@ -1,10 +1,15 @@
+import { Navigate } from 'react-router-dom';
 import Layout from '../components/layout/Layout.jsx';
 import SubLayout from '../components/layout/SubLayout.jsx';
 import Main from '../pages/Main.jsx';
 import Intro from '../pages/Intro.jsx';
 import Fulfillment from '../pages/Fulfillment.jsx';
 import Coupang from '../pages/Coupang.jsx';
-import { Navigate } from 'react-router-dom';
+import Cosmetics from '../pages/Cosmetics.jsx';
+import ShortTerm from '../pages/ShortTerm.jsx';
+import Apparel from '../pages/Apparel.jsx';
+import Counseling from '../pages/Counseling.jsx';
+import Estimate from '../pages/Estimate.jsx';
 
 const routes = [
   {
@@ -20,6 +25,10 @@ const routes = [
     element: <Navigate to="/service/fulfillment" replace />
   },
   {
+    path: '/customer',
+    element: <Navigate to="/customer/counseling" replace />
+  },
+  {
     path: '/company/company',
     element: <SubLayout><Intro /></SubLayout>,
   },
@@ -30,6 +39,26 @@ const routes = [
   {
     path: '/service/coupang',
     element: <SubLayout><Coupang /></SubLayout>,
+  },
+  {
+    path: '/service/cosmetics',
+    element: <SubLayout><Cosmetics /></SubLayout>,
+  },
+  {
+    path: '/service/short-term',
+    element: <SubLayout><ShortTerm /></SubLayout>,
+  },
+  {
+    path: '/service/apparel',
+    element: <SubLayout><Apparel /></SubLayout>,
+  },
+  {
+    path: '/customer/counseling',
+    element: <SubLayout><Counseling /></SubLayout>,
+  },
+  {
+    path: '/customer/estimate',
+    element: <SubLayout><Estimate /></SubLayout>,
   },
 ];
 

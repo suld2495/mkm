@@ -1,5 +1,6 @@
 import { RouterProvider, createHashRouter } from 'react-router-dom';
 import routes from './routes';
+import Modal from 'react-modal'; 
 
 function App() {
   const router = createHashRouter(routes);
@@ -8,5 +9,7 @@ function App() {
     <RouterProvider router={router} />
   );
 }
+
+Modal.setAppElement('#root')
 
 export default App;

@@ -9,9 +9,9 @@ const Section02 = () => {
         <div className="main-title">
           <h2>
             <strong>
-              쿠팡 쉽먼트의 까다로운 배송조건<br/>
+              계약이 쉽지 않은 단기 물류<br/>
               <span className="color">
-                엠케이엠 풀필먼트는 빠르고 완벽하게 해결합니다.
+                엠케이엠 풀필먼트가 해결해드립니다.
               </span>
             </strong>
           </h2>
@@ -21,26 +21,25 @@ const Section02 = () => {
           <ul>
             <li onMouseEnter={() => setActive(1)} className={`${active === 1 ? 'on' : ''}`}>
               <div>
-                <h3>규격포장</h3>
-                <p>체계적인 상품 배송</p>
+                <h3>쇼핑몰 오픈</h3>
               </div>
             </li>
             <li onMouseEnter={() => setActive(2)} className={`${active === 2 ? 'on' : ''}`}>
               <div>
-                <h3>등록명세서&거래내역서 출력</h3>
-                <p>체계적인 상품 배송</p>
+                <h3>크라우드 펀딩</h3>
               </div>
             </li>
             <li onMouseEnter={() => setActive(3)} className={`${active === 3 ? 'on' : ''}`}>
               <div>
-                <h3>쉽먼트 라벨 부착</h3>
-                <p>정확한 출고 관리</p>
+                <h3>비정기 배송<span>공동구매or사은품</span></h3>
               </div>
             </li>
           </ul>
   
           <p>
-            <strong>체계적이고 전문적인 시스템</strong>으로 쿠팡 배송의 모든 것을 <strong>엠케이엠이 도와드리겠습니다.</strong>
+            일회성 비정기적 물류로 고민하고 계신다면<br />
+            대표님의 시작을
+            <strong>엠케이엠이 도와드리겠습니다.</strong>
           </p>
         </div>
       </div>

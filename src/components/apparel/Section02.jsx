@@ -9,9 +9,9 @@ const Section02 = () => {
         <div className="main-title">
           <h2>
             <strong>
-              쿠팡 쉽먼트의 까다로운 배송조건<br/>
+              고객요구와 상품변동을 즉각 반영해야 하는 의류<br/>
               <span className="color">
-                엠케이엠 풀필먼트는 빠르고 완벽하게 해결합니다.
+                엠케이엠은 의류배송의 모든 것을 정확하게 해결합니다.
               </span>
             </strong>
           </h2>
@@ -21,26 +21,25 @@ const Section02 = () => {
           <ul>
             <li onMouseEnter={() => setActive(1)} className={`${active === 1 ? 'on' : ''}`}>
               <div>
-                <h3>규격포장</h3>
-                <p>체계적인 상품 배송</p>
+                <h3>의류 행거</h3>
               </div>
             </li>
             <li onMouseEnter={() => setActive(2)} className={`${active === 2 ? 'on' : ''}`}>
               <div>
-                <h3>등록명세서&거래내역서 출력</h3>
-                <p>체계적인 상품 배송</p>
+                <h3>암막 시스템</h3>
               </div>
             </li>
             <li onMouseEnter={() => setActive(3)} className={`${active === 3 ? 'on' : ''}`}>
               <div>
-                <h3>쉽먼트 라벨 부착</h3>
-                <p>정확한 출고 관리</p>
+                <h3>적재 로케이션 </h3>
               </div>
             </li>
           </ul>
   
           <p>
-            <strong>체계적이고 전문적인 시스템</strong>으로 쿠팡 배송의 모든 것을 <strong>엠케이엠이 도와드리겠습니다.</strong>
+            의류관리만을 위해 설계된 <strong>WAREHOUSE SYSTEM<br />
+            안전한 상품 보관과 정확한 배송을 약속
+            드립니다.</strong>
           </p>
         </div>
       </div>

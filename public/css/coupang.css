@@ -85,60 +85,6 @@
   background: #eff2f7;
 }
 
-.coupang .section02 .content {
-  margin-top: 55px;
-}
-
-.coupang .section02 .content ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  margin-top: 38px;
-  min-height: 26.0417vw;
-}
-
-.coupang .section02 .content ul li {
-  position: relative;
-  width: 17.8125vw;
-  border-radius: 10px;
-  overflow: hidden;
-  filter: drop-shadow(30px 50px 70px rgba(0, 0, 0, 0.15));
-  transition: .4s all ease-out;
-}
-
-.coupang .section02 .content ul li div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0.8229vw;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.coupang .section02 .content ul li div h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  line-height: 1.4;
-  word-break: keep-all;
-}
-
-.coupang .section02 .content ul li div p {
-  font-size: 20px;
-}
-
-
-.coupang .section02 .content ul li:not(.on) {
-  width: 20vw;
-}
-
 .coupang .section02 .content ul li:nth-child(1) {
   background: url(/images/coupang/coupangshipment01.png) no-repeat center / cover;
 }
@@ -149,19 +95,4 @@
 
 .coupang .section02 .content ul li:nth-child(3) {
   background: url(/images/coupang/coupangshipment03.png) no-repeat center / cover;
-}
-
-.coupang .section02 .content ul li.on {
-  width: 34.875vw;
-}
-
-.coupang .section02 .content ul + p {
-  margin-top: 64px;
-  text-align: center;
-  font-size: 22px;
-  color: #222;
-}
-
-.coupang .section02 .content ul + p strong {
-  font-weight: bold;
 }

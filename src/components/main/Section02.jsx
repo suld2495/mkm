@@ -6,7 +6,7 @@ const Section02 = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActive((active + 1) % 6);
+      setActive((active + 1) % 8);
     }, 3000);
 
     return () => {

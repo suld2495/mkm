@@ -395,3 +395,32 @@ footer .customer > div:first-child {
 footer .customer > div + div {
   color: #7f7f81;
 }
+
+.privacy > div {
+  height: 500px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.privacy {
+  width: 950px;
+}
+
+.privacy h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.privacy h2 + button {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  background: transparent;
+  border: none;
+}
+
+.privacy h2 + button:after {
+  display: inline-block;
+  content: "\00d7";
+  font-size: 25pt;
+}

@@ -47,11 +47,11 @@ export const link = {
     list: [
       {
         name: '간편상담',
-        url: 'counseling'
+        url: '/counseling'
       },
       {
         name: '물류견적',
-        url: 'estimate'
+        url: '/estimate'
       }
     ]
   }

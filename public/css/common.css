@@ -85,11 +85,10 @@ img {
 }
 
 .bottom-banner a {
+  position: relative;
   width: 201px;
   height: 54px;
   display: inline-flex;
-  background-color: var(--main-color);
-  background-image: url(/images/main/btn_arrow.png);
   background-repeat: no-repeat;
   background-position-y: 19px;
   background-position-x: 123px;
@@ -97,8 +96,34 @@ img {
   align-items: center;
   font-size: 20px;
   color: #fff;
-  padding-right: 16px;
   box-sizing: border-box;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.bottom-banner a:after {
+  content: '';
+  position: absolute;
+  background-image: url(/images/main/btn_arrow.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 18px;
+  transition: all 0.4s ease;
+  opacity: 0;
+  left: 70px;
+}
+
+.bottom-banner a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  padding-right: 16px;
+  border: none;
+}
+
+.bottom-banner a:hover:after {
+  left: 130px;
+  opacity: 1;
 }
 
 .bottom-banner p {
@@ -107,4 +132,74 @@ img {
 
 .bottom-banner .main-title h2 strong {
   color: #fff;
+}
+
+.bigger-slide .content {
+  margin-top: 55px;
+}
+
+.bigger-slide .content ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 38px;
+  min-height: 26.0417vw;
+}
+
+.bigger-slide .content ul li {
+  position: relative;
+  width: 17.8125vw;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(30px 50px 70px rgba(0, 0, 0, 0.15));
+  transition: .4s all ease-out;
+}
+
+.bigger-slide .content ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0.8229vw;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.bigger-slide .content ul li div h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.bigger-slide .content ul li div p {
+  font-size: 20px;
+}
+
+
+.bigger-slide .content ul li:not(.on) {
+  width: 20vw;
+}
+
+.bigger-slide .content ul li.on {
+  width: 34.875vw;
+}
+
+.bigger-slide .content ul + p {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.bigger-slide .content ul + p strong {
+  font-weight: bold;
 }

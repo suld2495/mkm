@@ -10,7 +10,7 @@ const Banner = () => {
       typeSpeed: 60,
       startDelay: 100,
       backDelay: 2000,
-      backSpeed: 40,
+      backSpeed: 80,
       loop: true,
       showCursor: true
     });
