@@ -196,7 +196,7 @@ header.header .line-btn:hover span:nth-child(2) {
 
 .sub-banner {
   height: 378px;
-  margin-bottom: 140px;
+  margin-bottom: 118px;
 }
 
 .sub-banner .pc {
@@ -221,7 +221,7 @@ header.header .line-btn:hover span:nth-child(2) {
   position: absolute;
   bottom: -35px;
   width: calc(80% - 20px);
-  height: 70px;
+  height: 65px;
   background-color: var(--main-color);
   border-radius: 5px;
 }
@@ -246,6 +246,8 @@ header.header .line-btn:hover span:nth-child(2) {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: right;
+  letter-spacing: -1px;
+  font-family: 'Noto Sans KR';
 }
 
 .sub-banner .nav ul {

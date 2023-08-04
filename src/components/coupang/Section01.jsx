@@ -5,7 +5,7 @@ const Section01 = () => (
         <span className="gray">MKM fulfillment</span>
         <h2>
           <strong>
-            x Coutpang쉽먼트
+            <span>x</span> <img src="/images/coupang/coupang.png" /><span>쉽먼트</span>
           </strong>
         </h2>
       </div>

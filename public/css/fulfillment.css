@@ -1,6 +1,6 @@
 .fulfillment .main-title h2 {
   color: #222;
-  margin-top: 30px;
+  margin-top: 13px;
 }
 
 .fulfillment .section01 .main-title h2 .color {
@@ -13,22 +13,22 @@
 }
 
 .fulfillment .main-title .sub-text {
-  margin-top: 40px;
+  margin-top: 22px;
   color: #222;
 }
 
 .fulfillment .section01 {
-  padding-top: 50px;  
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 85px;
 }
 
 .fulfillment .section02 {
   background: #eff2f7;
-  padding: 110px 0;
+  padding: 90px 0 118px;
 }
 
 .fulfillment .section02 .content {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .fulfillment .section02 ul {
@@ -38,13 +38,14 @@
 }
 
 .fulfillment .section02 .txt {
-  height: 113px;
+  height: 81px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   font-size: 23px;
   gap: 5px;
+  letter-spacing: -1px;
 }
 
 .fulfillment .section02 .txt strong {
@@ -65,7 +66,7 @@
 }
 
 .fulfillment .section03 {
-  padding: 110px 0;
+  padding: 95px 0 100px;
 }
 
 .fulfillment .section03 .main-title h2 {
@@ -73,7 +74,7 @@
 }
 
 .fulfillment .section03 .main-title .sub-text {
-  margin-top: 30px;
+  margin-top: 21px;
 }
 
 .fulfillment .section03 .content ul {
@@ -86,7 +87,7 @@
 .fulfillment .section03 .content li {
   border: 1px solid #d7d7d7;
   border-radius: 10px;
-  padding: 45px 40px;
+  padding: 35px 41px;
   box-sizing: border-box;
   transition: all 0.3s ease;
 }
@@ -114,9 +115,9 @@
   width: 100%;
   text-align: center;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
   border-radius: 10px;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 }
 
 .fulfillment .section03 .list {
@@ -127,7 +128,7 @@
 
 .fulfillment .section03 .list div {
   padding: 3px 0;
-  padding-left: 30px;
+  padding-left: 33px;
   font-size: 18px;
   background-image: url(/images/fulfillment/check_icon.png);
   background-repeat: no-repeat;
@@ -159,6 +160,6 @@
 
 
 .fulfillment .bottom-banner {
-  padding: 110px 0;
+  padding: 80px 0 65px;
   background-image: url(/images/fulfillment/fulfillment05.png)
 }

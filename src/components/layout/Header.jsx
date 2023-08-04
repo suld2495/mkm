@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import { throttle } from '../../utils/time';
+import InitComponent from './InitComponent';
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -20,6 +21,7 @@ const Header = () => {
 
   return (
     <header className={`header ${isScroll ? 'on' : ''}`}>
+      <InitComponent />
       <div className="logo">
         <Link to="/">
           <img src="/images/main/logo_header.png" />
