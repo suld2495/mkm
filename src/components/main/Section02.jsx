@@ -1,5 +1,18 @@
+import { useEffect, useState } from "react";
+
 const Section02 = () => {
   const list = ['주문 자동화', '데이터 연동', '스마트 물류', '맞춤 서비스', '전담 매니저 제도', '실시간 커뮤니티', '물류 품질관리', '꼼꼼한 통계리포트']
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((active + 1) % 6);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    }
+  }, [active]);
 
   return (
     <section className="section02">
@@ -16,7 +29,7 @@ const Section02 = () => {
         <ul className="list">
           {
             list.map((value, index) => (
-              <li key={index}>
+              <li key={index} className={`${active === index ? 'active' : ''}`}>
                 <span className="number">{`0${index + 1}`}</span>
                 <span className="title">{value}</span>
               </li>

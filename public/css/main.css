@@ -136,11 +136,13 @@
   transition: background 0.5s ease;
 }
 
-.main .section02 .list li:hover {
+.main .section02 .list li:hover,
+.main .section02 .list li.active {
   background-color: var(--main-color);
 }
 
-.main .section02 .list li:hover span {
+.main .section02 .list li:hover span,
+.main .section02 .list li.active span {
   color: #fff;
 }
 
@@ -156,7 +158,8 @@
   color: var(--main-color);
 }
 
-.main .section02 .list li:hover span.number {
+.main .section02 .list li:hover span.number,
+.main .section02 .list li.active span.number {
   color: #fff;
 }
 
@@ -197,35 +200,43 @@
   background-image: url(/images/main/mainicon08.png);
 }
 
-.main .section02 .list li:hover:nth-child(1) {
+.main .section02 .list li:hover:nth-child(1),
+.main .section02 .list li.active:nth-child(1) {
   background-image: url(/images/main/mainicon01_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(2) {
+.main .section02 .list li:hover:nth-child(2),
+.main .section02 .list li.active:nth-child(2) {
   background-image: url(/images/main/mainicon02_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(3) {
+.main .section02 .list li:hover:nth-child(3),
+.main .section02 .list li.active:nth-child(3) {
   background-image: url(/images/main/mainicon03_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(4) {
+.main .section02 .list li:hover:nth-child(4),
+.main .section02 .list li.active:nth-child(4) {
   background-image: url(/images/main/mainicon04_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(5) {
+.main .section02 .list li:hover:nth-child(5),
+.main .section02 .list li.active:nth-child(5) {
   background-image: url(/images/main/mainicon05_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(6) {
+.main .section02 .list li:hover:nth-child(6),
+.main .section02 .list li.active:nth-child(6) {
   background-image: url(/images/main/mainicon06_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(7) {
+.main .section02 .list li:hover:nth-child(7),
+.main .section02 .list li.active:nth-child(7) {
   background-image: url(/images/main/mainicon07_over.png);
 }
 
-.main .section02 .list li:hover:nth-child(8) {
+.main .section02 .list li:hover:nth-child(8),
+.main .section02 .list li.active:nth-child(8) {
   background-image: url(/images/main/mainicon08_over.png);
 }
 
