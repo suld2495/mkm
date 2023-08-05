@@ -46,7 +46,7 @@
   display: flex;
   padding-left: 20px;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 1.4;
   padding-top: 19px;
@@ -74,9 +74,16 @@
   outline: none;
   background: transparent;
   border: none;
-  color: #c2c2c2;
-  font-size: 14px;
+  color: #222;
+  font-size: 16px;
   height: 28px;
+  font-family: 'Noto sans-serif';
+  letter-spacing: -1px;
+}
+
+.customer .form .input input:not([type=radio]):not([type=checkbox]):placeholder,
+.customer .form textarea:placeholder {
+  color: #c2c2c2;
 }
 
 .customer .form textarea {
@@ -102,7 +109,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 15px;
+  font-size: 16px;
   color: #222;
 }
 
@@ -222,13 +229,13 @@
 }
 
 [type="submit"] {
-  width: 177px;
-  height: 60px;
+  width: 168px;
+  height: 54px;
   border: none;
   background: var(--main-color);
   border-radius: 10px;
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   margin: 0 auto;
 }
@@ -244,11 +251,12 @@
   background: transparent;
   border: none;
   outline: none;
+  font-size: 16px;
 }
 
 .text {
   margin-top: 30px;
-  font-size: 17px;
+  font-size: 21px;
   color: var(--main-color);
   font-weight: bold;
   position: relative;
