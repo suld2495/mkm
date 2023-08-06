@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Section05 = () => (
   <section className="section05 bottom-banner">
     <div className="main-title">
@@ -8,7 +10,7 @@ const Section05 = () => (
           지금 전문가의 상담을 받아보세요.
         </strong>
       </h2>
-      <a>Click</a>
+      <Link to="/customer">Click</Link>
       <p>
         엠케이엠 풀필먼트 서비스에 관한 문의는<br/>
         고객센터 070-4571-6540 또는 견적안내 1:1 문의를 이용해 주세요.

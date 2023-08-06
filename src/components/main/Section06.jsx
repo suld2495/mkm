@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Section06 = () => (
   <section className="section06 bottom-banner">
     <div className="main-title">
@@ -8,7 +10,7 @@ const Section06 = () => (
           지금 전문가의 상담을 받아보세요.
         </strong>
       </h2>
-      <a>Click</a>
+      <Link to="/customer">Click</Link>
     </div>
   </section>
 );

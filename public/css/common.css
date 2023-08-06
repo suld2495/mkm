@@ -121,6 +121,7 @@ img {
   border: 1px solid #fff;
   cursor: pointer;
   transition: all 0.5s ease;
+  text-decoration: none;
 }
 
 .bottom-banner a:after {

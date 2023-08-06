@@ -509,6 +509,14 @@ footer .customer > div + div {
     flex-direction: column;
     gap: 20px;
   }
+
+  header.header .logo img {
+    width: 90px;
+  }
+
+  header.header {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 420px) {
