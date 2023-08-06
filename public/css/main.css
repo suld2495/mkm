@@ -1,10 +1,39 @@
 .main .banner {
   height: 100vh;
-  background-image: url(/images/main/img_main01.jpg);
+  overflow: hidden;
+}
+
+.main .banner .banner-text {
   display: flex;
   padding-left: 10%;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main .banner .video {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main .banner video {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  filter: brightness(0.5);
+  object-fit: contain;
 }
 
 .main .banner h1 {
@@ -12,6 +41,11 @@
   color: #fff;
   line-height: 1.4;
   margin-bottom: 25px;
+}
+
+.main .main-title p {
+  word-break: keep-all;
+  padding: 0 30px;
 }
 
 .main .banner h1 strong {
@@ -56,6 +90,7 @@
   animation: blink 1.3s ease;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  word-break: keep-all;
 }
 
 .main .fulfillment .talk {
@@ -87,11 +122,15 @@
   animation: updown 1s ease;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  background-size: contain;
+  background-position-y: 20px;
 }
 
 .main .section01 .main-title h2 {
   margin-bottom: 37px;
   font-size: 43px;
+  padding: 0 30px;
+  word-break: keep-all;
 }
 
 .main .section01 .stick {
@@ -163,6 +202,7 @@
 .main .section02 .list li span.title {
   font-size: 26px;
   font-weight: bold;
+  word-break: keep-all;
 }
 
 .main .section02 .list li:nth-child(1) {
@@ -270,6 +310,7 @@
   background-position: center;
   overflow: hidden;
   border-radius: 25px;
+  background-size: cover;
 }
 
 .main .section03 .list li span {
@@ -378,6 +419,7 @@
 .main .section05 .center h2 {
   font-size: var(--main-title-font-size);
   line-height: 1.3;
+  word-break: keep-all;
 }
 
 .main .section05 .center strong {
@@ -507,5 +549,199 @@
   
   50% {
     bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main .section02 {
+    padding-inline: 20px;
+  }
+  
+  .main section {
+    padding-inline: 20px !important;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .main .fulfillment .left {
+    width: 472px;
+  }
+
+  .main .section02 .list li {
+    background-position-x: calc(100% - 15px);
+  }
+
+  .main .banner video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main .fulfillment .center {
+    gap: 40px;  
+  }
+  
+  .main .fulfillment .left {
+    width: 43%;
+  }
+
+  .main .fulfillment .talk img {
+    width: 70%;
+  }
+
+  .main .fulfillment .left h2 {
+    font-size: 30px;
+  }
+
+  .main .section01 .main-title h2 {
+    font-size: 35px;
+  }
+
+  .main-title p {
+    --main-sub-font-size: 16px;
+  }
+
+  .main .section02 .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main .section02 .list li span.number {
+    font-size: 20px;
+  }
+
+  .main .section02 .list li span.title {
+    font-size: 23px;
+  }
+  
+  .main .section03 .list li {
+    height: 200px;
+  }
+
+  .main .section03 .list li span {
+    font-size: 25px;
+  }
+  
+  .main .section05 .center {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .main .section05 .img img {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main .banner h1 {
+    font-size: 40px;
+  }
+
+  
+  .main .section02 .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main .section04 .list li div {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main .banner {
+    text-align: center;
+    padding: 0 50px;
+    word-break: keep-all;
+  }
+
+  .main .banner .banner-text {
+    padding: 0 50px;
+  }
+
+  .main .fulfillment .center {
+    flex-direction: column;
+  }
+
+  .main .fulfillment .left {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .main .section03 .list {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main .section03 .list li {
+    padding: 40px 0 0 40px;
+    height: 180px;
+  }
+
+  .main .section04 .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main .banner h1 {
+    font-size: 40px;
+  }
+
+  
+  .main .section02 .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main .section02 .main-title h2 {
+    font-size: 30px;
+  }
+
+  .main .section02 .main-title p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .main .banner h1 {
+    font-size: 30px;
+  }
+
+  .main .banner p {
+    font-size: 14px;
+  }
+
+  .main .main-title h2 {
+    font-size: 30px;
+  }
+  
+  .main-title p {
+    --main-sub-font-size: 13px;
+  }
+
+  .main .section01 {
+    padding: 70px 0;
+  }
+
+  .main .fulfillment {
+    margin: 70px 0;
+  }
+  
+  .main .section03 .list li span {
+    font-size: 22px;
+  }
+
+  .main .section03 .list li strong {
+    font-size: 24px;
+  }
+
+  .main .section03 {
+    padding: 50px 0;
   }
 }

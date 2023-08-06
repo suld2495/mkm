@@ -33,8 +33,12 @@
 
 .fulfillment .section02 ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+}
+
+.fulfillment .section02 ul img {
+  width: 100%;
 }
 
 .fulfillment .section02 .txt {
@@ -79,7 +83,7 @@
 
 .fulfillment .section03 .content ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 35px;
   margin-top: 58px;
 }
@@ -162,4 +166,36 @@
 .fulfillment .bottom-banner {
   padding: 80px 0 65px;
   background-image: url(/images/fulfillment/fulfillment05.png)
+}
+
+@media screen and (max-width: 1300px) {
+  .fulfillment section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fulfillment .section02 .txt {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .fulfillment .section02 ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .fulfillment .section02 .txt {
+    font-size: 17px;
+  }
+
+  .fulfillment .section02 {
+    padding: 70px 0;
+  }
+
+  .fulfillment .section03 {
+    padding: 70px 0;
+  }
 }

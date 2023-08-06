@@ -10,6 +10,7 @@ import ShortTerm from '../pages/ShortTerm.jsx';
 import Apparel from '../pages/Apparel.jsx';
 import Counseling from '../pages/Counseling.jsx';
 import Estimate from '../pages/Estimate.jsx';
+import Solution from '../pages/Solution.jsx';
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/service',
     element: <Navigate to="/service/fulfillment" replace />
+  },
+  {
+    path: '/solution',
+    element: <Navigate to="/solution/solution" replace />
   },
   {
     path: '/customer',
@@ -51,6 +56,10 @@ const routes = [
   {
     path: '/service/apparel',
     element: <SubLayout><Apparel /></SubLayout>,
+  },
+  {
+    path: '/solution/solution',
+    element: <SubLayout><Solution /></SubLayout>,
   },
   {
     path: '/customer/counseling',

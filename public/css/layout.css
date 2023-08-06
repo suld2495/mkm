@@ -75,7 +75,7 @@ header.header .main-menu > li:hover > span {
   color: #fff;
 }
 
-header.header ul ul {
+header.header ul:not(.gnbList):not(.mobile-gnbList) ul {
   position: absolute;
   top: 100px;
   left: 0px;
@@ -90,7 +90,7 @@ header.header ul ul {
   visibility: hidden;
 }
 
-header.header:hover ul li ul {
+header.header:hover ul:not(.gnbList):not(.mobile-gnbList) li ul {
   height: 355px;
   transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out 0.2s;
   opacity: 1.0;
@@ -99,7 +99,7 @@ header.header:hover ul li ul {
 }
 
 
-header.header ul ul:before {
+header.header ul:not(.gnbList):(.mobile-gnbList) ul:before {
   position: absolute;
   top: calc(-1 * 140px);
   left: 0;
@@ -111,7 +111,7 @@ header.header ul ul:before {
   transition: opacity 0.3s;
 }
 
-header.header ul li:hover ul:before{
+header.header ul:not(.gnbList) li:hover ul:before{
   opacity: 1;
 }
 
@@ -352,7 +352,7 @@ footer .center > div .info > div > div + div:before {
 }
 
 footer .customer {
-  width: 200px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -366,6 +366,7 @@ footer .center > div:last-child {
 footer .center > div:last-child > span {
   color: #c4c5c9;
   font-size: 15px;
+  line-height: 1.4;
 }
 
 footer .center > div:last-child > span + div {
@@ -423,4 +424,95 @@ footer .customer > div + div {
   display: inline-block;
   content: "\00d7";
   font-size: 25pt;
+}
+
+@media screen and (max-width: 1300px) {
+  footer.footer {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1166px) {
+  footer .customer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  header.header {
+    padding-inline: 20px !important;
+  }
+
+  header.header #gnbBg {
+    display: none;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  .sub-banner .pc {
+    justify-content: flex-start;
+  }
+
+  .sub-banner .pc h1 {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  footer .logo {
+    display: none;
+  }
+  
+  footer .center > div:first-child {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub-banner .nav > div:first-child {
+    display: none;
+  }
+  
+  .sub-banner .nav > div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sub-banner .nav button {
+    padding: 0 20px;
+    background-position-x: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer .center > div .info > div {
+    flex-wrap: wrap;
+  }
+  
+  footer .center > div .info > div > div {
+    width: 100%;
+  }
+
+  footer .center > div .info > div:not(:first-child):not(:last-child) {
+    gap: 20px;
+  }
+
+  footer .center > div .info > div > div + div:before {
+    display: none;
+  }
+
+  footer .center > div:last-child {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sub-banner .nav {
+    width: 90%;
+  }
 }

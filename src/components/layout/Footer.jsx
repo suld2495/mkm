@@ -37,16 +37,22 @@ const Footer = () => {
           </div>
           <div className="customer">
             <div>고객센터</div>
-            <div><span>상담번호</span></div>
-            <div><span>운영시간</span></div>
+            <div>
+              <span>상담번호</span>
+              <span>070-4571-6540</span>
+            </div>
+            <div>
+              <span>운영시간</span>
+              <span>09:30~18:00(토,일 및 공휴일 휴무)</span>
+            </div>
           </div>
         </div>
 
         <div>
           <span>COPYRIGHT © 2023 (주)엠케이엠코퍼레이션 ALL RIGHTS RESERVED.</span>
           <div>
-            <Link to="/">이용약관</Link>
-            <Link to="/">개인정보처리방침</Link>
+            <Link to="/company">회사소개</Link>
+            <Link to="/customer">고객센터</Link>
           </div>
         </div>
       </div>

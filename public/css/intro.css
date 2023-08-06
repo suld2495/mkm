@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .intro .section01 .fulfillment .left {
@@ -25,17 +26,20 @@
   font-weight: bold;
   line-height: 1.3;
   margin-bottom: 46px;
+  word-break: keep-all;
 }
 
 .intro .section01 .left h2 span {
   display: block;
   color: var(--main-color);
+  word-break: keep-all;
 }
 
 .intro .section01 .left > div p {
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 45px;
+  word-break: keep-all;
 }
 
 .intro .section01 .left p strong {
@@ -67,38 +71,6 @@
 
 .intro .section02 .main-title h2 {
   color: #222;
-}
-
-.intro .section02 .sub01 {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.section02 .sub01 .img + div p {
-  color: #222;
-  font-size: 19px;
-  line-height: 1.7;
-}
-
-
-.intro .section02 .sub01 .imgbox + div p {
-  color: #222;
-  font-size: 19px;
-  line-height: 1.7;
-}
-
-.section02 .sub01 .img + div p:first-child {
-  margin-bottom: 30px;
-}
-
-.section02 .sub01 .img + div p strong {
-  font-weight: bold;
-}
-
-.section02 .sub01 .img + div p .color {
-  color: var(--main-color);
 }
 
 .intro .section02 .sub02 {
@@ -135,6 +107,7 @@
   font-weight: bold;
   line-height: 1.4;
   margin-top: 20px;
+  word-break: keep-all;
 }
 
 .intro .section03 .center {
@@ -143,6 +116,7 @@
 
 .intro .section03 .center img {
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .intro .section03 .center p {
@@ -178,6 +152,7 @@
 .intro .section04 .talk > div {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .intro .section04 .talk > div > span {
@@ -198,6 +173,7 @@
   padding: 53px;
   box-sizing: border-box;
   align-items: flex-start;
+  word-break: keep-all;
 }
 
 .intro .section04 .talk > div:first-child {
@@ -237,6 +213,7 @@
   font-weight: bold;
 }
 
+
 .intro .section05 {
   padding: 120px 0 110px 0;
 }
@@ -246,88 +223,102 @@
   margin-bottom: 40px;
 }
 
-.intro .section05 ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 43px;
+
+@media screen and (max-width: 1300px) {
+  .intro section {
+    padding-inline: 20px !important;
+  }
+
+  .intro .section01 .center > div {
+      flex: 1;
+  }
+
+  .intro .section01 img {
+    width: 100%;
+  }
 }
 
-.intro .section05 ul .imgbox + div {
-  margin-top: 68px;
-  border: 1px solid #e1e1e1;
-  height: 192px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+@media screen and (max-width: 864px) {
+  .intro .section01 .center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro .section02 .sub02 ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .intro .section02 .sub02 ul li {
+    width: calc(50% - 20px);
+  }
+
+  .intro .section04 .talk > div div {
+    min-height: 180px;
+    height: auto;
+    flex: 1;
+  }
 }
 
-.intro .section05 ul .imgbox + div:before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background: var(--main-color);
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 100%;
-}
+@media screen and (max-width: 420px) {
+  .intro .section02 .sub02 ul li {
+    width: 100%
+  }
 
-.intro .section05 ul .img {
-  overflow: hidden;
-  border-radius: 10px;
-  position: relative;
-}
+  .intro .section04 .talk > div div {
+    padding: 30px;
+    font-size: 19px;
+  }
 
-.intro .section05 ul .img img {
-  transition: all 0.9s ease;
-  position: relative;
-  z-index: 10;
-}
+  .intro .section05 {
+    padding: 70px 0;
+  }
 
-.intro .section05 ul .img:hover img {
-  transform: scale(1.1);
-}
+  .intro .section01 .left h2 {
+    font-size: 28px;
+  }
 
-.intro .section05 ul .imgbox {
-  position: relative;
-}
+  .intro .section01 .img:before {
+    display: none;
+  }
 
-.intro .section05 ul .imgbox:after {
-  content: '';
-  /* width: 2px; */
-  height: 63px;
-  position: absolute;
-  bottom: -65px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px dashed var(--main-color);
-}
+  .intro .section02 .sub02 ul p {
+    font-size: 14px;
+  }
 
-.intro .section05 ul .imgbox + div:after {
-  content: '';
-  width: 4px;
-  height: 4px;
-  position: absolute;
-  background: #fff;
-  top: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 100%;
-}
+  .sub01 .img + div p {
+    font-size: 16px;
+  }
 
-.intro .section05 ul .imgbox + div  h3 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
+  .intro .section02 {
+    padding: 70px 0;
+  }
 
-.intro .section05 ul .imgbox + div p {
-  font-size: 18px;
-  line-height: 1.4;
-  word-break: keep-all;
+  .intro .section03 .center p {
+    font-size: 15px;
+  }
+
+  .intro .section03 .center {
+    padding: 70px 0;
+  }
+
+  .intro .section04 .talk > div > span {
+    font-size: 20px;
+  }
+
+  .intro .section04 .talk > div {
+    flex-direction: column;
+  }
+
+  .intro .section04  .talk > div.right {
+    flex-direction: column-reverse;
+  }
+
+  .intro .section04 .talk > div div {
+    width: 100%;
+  }
+
+  .intro .section04 {
+    padding: 70px 0;
+  }
 }

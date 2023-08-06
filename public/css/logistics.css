@@ -15,7 +15,7 @@
 
 .logistics .section01 .content ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 40px;
   margin-bottom: 55px;
 }
@@ -50,6 +50,7 @@
     font-size: 22px;
     color: #222;
     line-height: 1.5;
+    word-break: keep-all;
 }
 
 .logistics .section01 .content .sub-text strong {
@@ -128,3 +129,35 @@
 .apparel .section03.bottom-banner {
   background-image: url(/images/apparel/clothing07.jpg);
 }
+
+@media screen and (max-width: 1300px) {
+  .logistics section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .logistics .section01 .content .sub-text {
+    font-size: 20px;
+  }
+
+  .logistics .section01 .content ul li h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logistics .section01 .content .sub-text {
+    font-size: 18px;
+  }
+
+  .logistics .section01 .content ul li h2 {
+    font-size: 24px;
+  }
+
+  .logistics .section02 {
+    padding: 70px 0;
+  }
+}
+
+
