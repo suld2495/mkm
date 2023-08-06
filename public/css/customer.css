@@ -8,6 +8,7 @@
   margin-bottom: 30px;
   word-break: keep-all;
   line-height: 1.4;
+  font-weight: 600;
 }
 
 .customer .customer-text .color {
@@ -135,7 +136,7 @@
   width: 100px;
   background: #fff;
   border: 1px solid #cacaca;
-  height: 30px;
+  height: 23px;
 }
 
 .customer .form .form-item.agree .input {
@@ -378,11 +379,13 @@
   }
 
   .customer .customer-text p {
-    font-size: 14px;
+    font-size: 17px;
   }
 
+  .estimate .step {margin-top: 47px !important;}
+  
   .customer .form {
-    margin-top: 40px;
+    margin-top: 48px;
   }
 
   .customer .form-item.agree {

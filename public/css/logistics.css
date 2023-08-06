@@ -140,7 +140,28 @@
   .logistics .section01 .content .sub-text {
     font-size: 20px;
   }
+  .logistics .section01 .content ul li {
+    padding: 24px 0;
+  }  
 
+  .logistics .section01 {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+  .logistics .section01 .content ul {
+    margin-bottom: 40px;
+    gap: 25px;
+}
+  
+  .bigger-slide .content ul + p {
+    margin-top: 45px;
+}
+
+  .bigger-slide .content {
+    margin-top: 35px;
+}
+  
   .logistics .section01 .content ul li h2 {
     font-size: 26px;
   }
@@ -156,8 +177,7 @@
   }
 
   .logistics .section02 {
-    padding: 70px 0;
+    padding: 35px 0  71px;
   }
 }
-
 
