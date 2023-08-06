@@ -225,6 +225,28 @@
 
 
 @media screen and (max-width: 1300px) {
+
+  .intro .section01 .left > div p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+  
+  .intro .section02 .sub02 .main-title {
+    margin-bottom: 48px;
+}
+
+
+  .intro .section02 .sub02 ul p {
+    font-size: 17px;
+}
+  
+
+  .sub01 .img + div p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+  
   .intro section {
     padding-inline: 20px !important;
   }
@@ -247,6 +269,7 @@
   .intro .section02 .sub02 ul {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 32px;
   }
 
   .intro .section02 .sub02 ul li {
@@ -283,11 +306,14 @@
   }
 
   .intro .section02 .sub02 ul p {
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
   }
 
   .sub01 .img + div p {
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 1.5;
   }
 
   .intro .section02 {
@@ -295,11 +321,17 @@
   }
 
   .intro .section03 .center p {
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 1.5;
   }
 
+  .intro .section03 .center img {
+    padding-bottom: 40px;
+    width: 100%;
+}
+
   .intro .section03 .center {
-    padding: 70px 0;
+    padding: 68px 0px 56px;
   }
 
   .intro .section04 .talk > div > span {
