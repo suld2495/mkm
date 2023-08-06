@@ -282,7 +282,7 @@ header.header .line-btn:hover span:nth-child(2) {
   color: var(--main-color);
 }
 
-.sub-banner .nav > div:hover ul {
+.sub-banner .nav > div.on ul {
   max-height: 100vh;
   transform: translateY(0px);
   transition: max-height 0.5s cubic-bezier(0.4, 0, 1, 1);

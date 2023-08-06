@@ -6,15 +6,19 @@
 .customer .customer-text h3 {
   font-size: 23px;
   margin-bottom: 30px;
+  word-break: keep-all;
+  line-height: 1.4;
 }
 
 .customer .customer-text .color {
   color: var(--main-color);
+  margin-left: 5px;
 }
 
 .customer .customer-text p {
   font-size: 18px;
   line-height: 1.4;
+  word-break: keep-all;
 }
 
 .customer .form {
@@ -226,6 +230,8 @@
 
 .customer .form .form-item.agree .input div p {
   margin-top: -2px;
+  word-break: keep-all;
+  flex: 1;
 }
 
 [type="submit"] {
@@ -309,4 +315,99 @@
 
 .customer .form-item.checkbox .input label:last-child {
   flex: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .customer section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer .form .row {
+    flex-direction: column;
+  }
+
+  .customer .form .store .input {
+    gap: 13px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .customer .form .label {
+    width: 100px;
+    font-size: 14px;
+    word-break: keep-all;
+    padding-left: 15px;
+  }
+
+  .customer .form-item.checkbox .input label {
+    width: calc(100% / 3);
+    height: 30px;
+  }
+
+  .customer .form-item.checkbox .input label:last-child {
+    width: 100%;
+  }
+
+  .customer .form .agree .label {
+    word-break: break-all;
+    width: 100%;
+  }
+  
+  .customer .form .form-item.agree .input > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .customer .form textarea {
+    min-height: 200px;
+  }
+
+  .customer .form .email .input input + span {
+    width: 20px;
+    text-align: center;
+  }
+
+  .customer .form .store .input {
+    flex-wrap: wrap;
+  }
+  
+  .customer .form .store .input div {
+    width: calc(50% - 7px);
+  }
+
+  .customer .customer-text p {
+    font-size: 14px;
+  }
+
+  .customer .form {
+    margin-top: 40px;
+  }
+
+  .customer .form-item.agree {
+    flex-direction: column;
+  }
+
+  .customer .form .form-item.agree .input {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .customer .form .form-item.agree .input div p {
+    font-size: 14px;
+  }
+
+  .customer .form .form-item.agree .input > div {
+    gap: 12px;
+  }
+  
+  .customer .form-item.checkbox:nth-child(3) .input label {
+    width: 50%;
+  }
+
+  .customer .form .input input:not([type=radio]):not([type=checkbox]), .customer .form textarea {
+    font-size: 14px;
+  }
 }

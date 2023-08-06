@@ -1,8 +1,11 @@
 import { useLocation } from 'react-router-dom';
 import { link } from '../../data/nav';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const SubBanner = () => {
+  const [mainMenu, setMainMenu] = useState(false);
+  const [subMenu, setSubMenu] = useState(false);
   const { pathname } = useLocation();
   const key = pathname.split('/')[1];
   const subKey = pathname.split('/')[2];
@@ -14,7 +17,7 @@ const SubBanner = () => {
       <div className="pc" style={{ backgroundImage: `url(/images/sub/${key}.jpg)` }}>
         <h1>{target.name}</h1>
         <div className="nav">
-          <div>
+          <div className={`${mainMenu ? 'on' : ''}`} onClick={() => setMainMenu((prev) => !prev)}>
             <button>{target.name}</button>
             <ul>
               {
@@ -26,7 +29,7 @@ const SubBanner = () => {
               }
             </ul>
           </div>
-          <div>
+          <div className={`${subMenu ? 'on' : ''}`} onClick={() => setSubMenu((prev) => !prev)}>
             <button>{subTitle.name}</button>
             <ul>
               {
