@@ -489,6 +489,10 @@ footer .customer > div + div {
 }
 
 @media screen and (max-width: 640px) {
+  .sub-banner {
+    height: 260px;
+  }
+
   footer .center > div .info > div {
     flex-wrap: wrap;
   }
