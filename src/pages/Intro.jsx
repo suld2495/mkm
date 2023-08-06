@@ -6,7 +6,7 @@ import Section05 from '../components/intro/Section05';
 
 const Intro = () => (
   <div className="intro">
-    <h1 className="sub-title">회사소개</h1>
+    <h1 className="sub-title"><span>회사소개</span></h1>
     <Section01 />
     <Section02 />
     <Section03 />

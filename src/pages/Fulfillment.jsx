@@ -6,7 +6,7 @@ import Section05 from '../components/fulfillment/Section05';
 
 const Fulfillment = () => (
   <div className="fulfillment">
-    <h1 className="sub-title">풀필먼트</h1>
+    <h1 className="sub-title"><span>풀필먼트</span></h1>
     <Section01 />
     <Section02 />
     <Section03 />

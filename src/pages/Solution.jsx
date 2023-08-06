@@ -29,7 +29,7 @@ const Cosmetics = () => {
   }, []);
   return (
     <div className="solution">
-      <h1 className="sub-title">솔루션소개</h1>
+      <h1 className="sub-title"><span>솔루션소개</span></h1>
       {
         visible && (
           <div onClick={scroll} className="top" />
