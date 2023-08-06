@@ -22,6 +22,10 @@ const Step1Form = () => {
       return;
     }
 
+    if (data.product?.includes?.('기타')) {
+      data.product.push(data.productText);
+    }
+
     setStep1State(data);
   };
 
@@ -124,14 +128,14 @@ const Step1Form = () => {
             <div className="input">
               <div>
                 <NumberInput
-                  name='import'
+                  name='import1'
                   control={control}
                   placeholder="월 입고량을 작성해주세요."
                   required
                 />
                 <span>개</span>
               </div>
-              {errors.import && <div className="errors">월 입고량을 작성해주세요.</div>}
+              {errors.import1 && <div className="errors">월 입고량을 작성해주세요.</div>}
             </div>
           </div>
           <div className="form-item store">
@@ -219,10 +223,10 @@ const Step1Form = () => {
             <label className="label">반품엽서등</label>
             <div className="input">
               <div>
-                <label><input {...register('return')} type="radio" value="있음" />있음</label>
-                <label><input {...register('return')} type="radio" value="없음" />없음</label>
+                <label><input {...register('return1')} type="radio" value="있음" />있음</label>
+                <label><input {...register('return1')} type="radio" value="없음" />없음</label>
               </div>
-              {errors.return && <div className="errors">반품엽서등을 선택해주세요.</div>}
+              {errors.return1 && <div className="errors">반품엽서등을 선택해주세요.</div>}
             </div>
           </div>
         </div>

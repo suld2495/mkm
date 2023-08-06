@@ -2,10 +2,13 @@ import { useEffect } from 'react';
 import WOW from 'wow.js';
 import ModalBox from '../common/CustomModal';
 import { useLocation } from 'react-router-dom';
-import { useSetRecoilState } from 'recoil';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { navState } from '../../store/nav';
+import { loadingState } from '../../store/loading';
+import Loading from '../common/Loading';
 
 const InitComponent = () => {
+  const loading = useRecoilValue(loadingState);
   const setNav = useSetRecoilState(navState);
   const { pathname } = useLocation();
   useEffect(() => {
@@ -18,7 +21,13 @@ const InitComponent = () => {
   }, [pathname, setNav]);
 
   return (
-    <ModalBox />
+    <>
+      <ModalBox />
+      {
+        loading && <Loading />
+      }
+    </>
+    
   );
 };
 

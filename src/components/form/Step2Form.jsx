@@ -72,23 +72,9 @@ const Step2Form = () => {
           <label className="label">이메일</label>
           <div>
             <div className="input">
-              <input type="text" {...register('email1', { required: true })} placeholder="이메일을 입력해 주세요." />
-              <span>@</span>
-              <select {...register('email1', { required: true })}>
-                <option>선택해주세요.</option>
-                <option>1</option>
-              </select>
+              <input type="email" {...register('email', { required: true })} placeholder="이메일을 입력해 주세요." />
             </div>
-            {(errors.email1 || errors.email2) && <div className="errors">이메일을 입력해 주세요.</div>}
-          </div>
-        </div>
-        <div className="form-item">
-          <label className="label">
-            상담내용
-          </label>
-          <div className="input">
-            <textarea {...register('content', { required: true })} placeholder="문의하실 내용을 입력해 주세요." />
-            {errors.content && <div className="errors">문의하실 내용을 입력해 주세요.</div>}
+            {errors.email && <div className="errors">이메일을 입력해 주세요.</div>}
           </div>
         </div>
         <div className="form-item agree">

@@ -1,18 +1,17 @@
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import useCustomer from "../../hooks/useCustomer";
 import { useSetRecoilState } from "recoil";
 import { modalState } from "../../store/modal";
 
 const CounselingForm = () => {
   const setModal = useSetRecoilState(modalState);
-  const navigate = useNavigate();
   const saveEstimate = useCustomer();
   const {
     handleSubmit,
     register,
     setError,
     setFocus,
+    reset,
     formState: { errors }
   } = useForm({ mode: 'onChange' });
 
@@ -24,9 +23,14 @@ const CounselingForm = () => {
     }
     
     try {
+      if (data.product?.includes?.('기타')) {
+        data.product.push(data.productText);
+      }
+
       await saveEstimate.saveCounseling.mutateAsync(data);
       alert('저장되었습니다.');
-      navigate('/customer/counseling');
+      reset();
+      window.scrollTo(0, 0)
     } catch {
       alert('문제가 발생하였습니다. 다시 이용해주시기 바랍니다.');
     }
@@ -66,14 +70,9 @@ const CounselingForm = () => {
           <label className="label">이메일</label>
           <div>
             <div className="input">
-              <input type="text" {...register('email1', { required: true })} placeholder="이메일을 입력해 주세요." />
-              <span>@</span>
-              <select {...register('email2', { required: true })}>
-                <option>선택해주세요.</option>
-                <option>1</option>
-              </select>
+              <input type="email" {...register('email', { required: true })} placeholder="이메일을 입력해 주세요." />
             </div>
-            {(errors.email1 || errors.email2) && <div className="errors">이메일을 입력해 주세요.</div>}
+            {errors.email && <div className="errors">이메일을 입력해 주세요.</div>}
           </div>
         </div>
         <div className="form-item checkbox">
