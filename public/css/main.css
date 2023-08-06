@@ -310,7 +310,6 @@
   background-position: center;
   overflow: hidden;
   border-radius: 25px;
-  background-size: cover;
 }
 
 .main .section03 .list li span {
@@ -580,6 +579,12 @@
     width: auto;
     height: 100vh;
   }
+
+    
+  .main .section03 .list li:hover {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -621,6 +626,7 @@
   
   .main .section03 .list li {
     height: 200px;
+    background-size: cover;
   }
 
   .main .section03 .list li span {

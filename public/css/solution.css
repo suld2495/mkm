@@ -119,11 +119,11 @@
 }
 
 .solution .section03 .trust ul .imgbox + div {
-  height: 160px;
+  height: 134px;
 }
 
 .solution .section03 .trust ul .imgbox + div p {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .solution .section03 .trust ul .imgbox + div h3 {
@@ -165,6 +165,7 @@
   font-weight: 400;
   position: relative;
   z-index: 1;
+  letter-spacing: -1px;
 }
 
 
@@ -239,6 +240,7 @@
 .solution .section05 li > div:last-child p {
   line-height: 1.4;
   word-break: keep-all;
+  font-size: 20px;
 }
 
 .solution .section05 li > div:last-child strong {
@@ -267,13 +269,13 @@
 }
 
 .solution .text h5 {
-  font-size: 27px;
+  font-size: 29px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .solution .text p {
-  font-size: 18px;
+  font-size: 20px;
   word-break: keep-all;
   line-height: 1.4;
 }

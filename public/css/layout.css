@@ -99,7 +99,7 @@ header.header:hover ul:not(.gnbList):not(.mobile-gnbList) li ul {
 }
 
 
-header.header ul:not(.gnbList):(.mobile-gnbList) ul:before {
+header.header ul:not(.gnbList):not(.mobile-gnbList) ul:before {
   position: absolute;
   top: calc(-1 * 140px);
   left: 0;
@@ -111,7 +111,7 @@ header.header ul:not(.gnbList):(.mobile-gnbList) ul:before {
   transition: opacity 0.3s;
 }
 
-header.header ul:not(.gnbList) li:hover ul:before{
+header.header ul:not(.gnbList):not(.mobile-gnbList) li:hover ul:before{
   opacity: 1;
 }
 
