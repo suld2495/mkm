@@ -455,9 +455,16 @@ footer .customer > div + div {
     justify-content: flex-start;
   }
 
+
+  .sub-banner .nav {
+    border-radius: 0px;
+}
+  
   .sub-banner .pc h1 {
     flex: 1;
     text-align: center;
+    font-size: 37px;
+    font-weight: 500;
   }
 }
 
@@ -490,7 +497,8 @@ footer .customer > div + div {
 
 @media screen and (max-width: 640px) {
   .sub-banner {
-    height: 260px;
+    height: 244px;
+    margin-bottom: 92px;
   }
 
   footer .center > div .info > div {

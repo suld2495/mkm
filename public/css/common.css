@@ -378,6 +378,10 @@ img {
 }
 
 @media screen and (max-width: 864px) {
+  .sub-title {
+    font-size: 37px;
+}
+
   .sub01 {
     flex-direction: column;
     text-align: center;
@@ -388,7 +392,7 @@ img {
   }
   
   .trust ul .imgbox + div p {
-    font-size: 14px;
+    font-size: 17px;
   }
   
   .trust ul .imgbox + div {

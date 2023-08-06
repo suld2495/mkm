@@ -361,6 +361,12 @@
     font-size: 21px;
     height: 108px;
   }
+
+  .solution .section01 .main-title h2 {
+    margin-top: 30px;
+}
+
+  
 }
 
 @media screen and (max-width: 640px) {
@@ -377,7 +383,7 @@
   
   .solution .section02 .content ul {
     grid-template-columns: repeat(2, 1fr);
-    gap: 27px;
+    gap: 51px;
   }  
 
   .solution .sub01 + div {
