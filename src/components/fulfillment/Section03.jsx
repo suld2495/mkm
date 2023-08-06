@@ -44,7 +44,7 @@ const Section03 = () => {
     <section className="section03">
       <div className="center">
         <div className="main-title">
-          <h2>
+          <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0">
             <strong>
               간단해서 더 좋은
               <span className="color">
@@ -52,7 +52,7 @@ const Section03 = () => {
               </span>
             </strong>
           </h2>
-          <p className="sub-text">
+          <p className="sub-text  wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3">
             계약부터 정산까지
           </p>
         </div>
@@ -61,7 +61,7 @@ const Section03 = () => {
           <ul>
             {
               data.map(({ list, title }, index) => (
-                <li key={index} className={`${active === index ? 'active' : ''}`}>
+                <li key={index} className={`${active === index ? 'active' : ''} wow fadeInUp`} data-wow-duration="1.5s" data-wow-delay={`${0.3 * (index + 2)}s`}>
                   <div className="header">
                     <span>{`STEP${index + 1}`}</span>
                     <span>{title}</span>

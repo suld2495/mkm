@@ -371,6 +371,11 @@
 
 @media screen and (max-width: 640px) {
 
+  .solution .section02 .content ul li > div:first-child span + div {
+  height: 180px;
+}
+  
+
   .solution .text p {
     font-size: 19px;
 }

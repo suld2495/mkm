@@ -2,8 +2,8 @@ const Section01 = () => (
   <section className="section01">
     <div className="center">
       <div className="main-title">
-        <span className="gray">MKM fulfillment</span>
-        <h2>
+        <span className="gray wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="">MKM fulfillment</span>
+        <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
           <strong>
             <span>x</span>코스메틱 물류
           </strong>
@@ -12,7 +12,7 @@ const Section01 = () => (
 
       <div className="content">
         <ul>
-          <li>
+          <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">
             <img src="/images/cosmetics/cosmetic01.png" />
             <h2>
               <strong>
@@ -21,7 +21,7 @@ const Section01 = () => (
               </strong>
             </h2>
           </li>
-          <li>
+          <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
             <img src="/images/cosmetics/cosmetic02.png" />
             <h2>
               <strong>
@@ -30,7 +30,7 @@ const Section01 = () => (
               </strong>
             </h2>
           </li>
-          <li>
+          <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
             <img src="/images/cosmetics/cosmetic03.png" />
             <h2>
               <strong>
@@ -40,7 +40,7 @@ const Section01 = () => (
             </h2>
           </li>
         </ul>
-        <p className="sub-text">
+        <p className="sub-text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
           코스메틱 상품의 꼼꼼한 보관부터 <strong>선입선출, 배송, 반품관리의 모든 것<br/>
           엠케이엠 코스메틱 물류로
           </strong>

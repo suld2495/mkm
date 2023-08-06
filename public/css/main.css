@@ -554,12 +554,36 @@
 @media screen and (max-width: 1300px) {
   .main .section02 {
     padding-inline: 20px;
+    padding: 57px 0 82px 0;
   }
+  .main .section03 .list li strong {
+    font-size: 28px;
+}
+  
+
+  .main .section03 {
+    padding: 60px 0 70px 0;
+}
   
   .main section {
     padding-inline: 20px !important;
   }
 
+  .main .section04 .list li {
+    height: 250px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 46px 0;
+    text-align: center;
+}
+  
+  .main .section04 {
+    background-color: #eff2f7;
+    padding: 60px 0 70px;
+}
+  
   .center {
     width: 100%;
   }
@@ -569,7 +593,9 @@
   }
 
   .main .section02 .list li {
+    height: 131px;
     background-position-x: calc(100% - 15px);
+    background-position-y: calc(100% - 28px);
   }
 
   .main .banner video {
@@ -608,8 +634,14 @@
     font-size: 35px;
   }
 
+  .main .section03 .main-title p {
+    color: #222;
+    margin-bottom: 32px;
+    font-size: 17px;
+}
+  
   .main-title p {
-    --main-sub-font-size: 16px;
+    --main-sub-font-size: 16px !important;
   }
 
   .main .section02 .list {
@@ -652,18 +684,34 @@
   
   .main .section02 .list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
   }
 
   .main .section04 .list li div {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 0.9;
   }
 }
 
 @media screen and (max-width: 640px) {
+
+  .main .section03 .list {
+    gap: 25px;
+  }
   
-  .main .main-title h2 {
+  .main .section03 .main-title h2 {
+    margin-bottom: 18px;
+  }
+  
+  .main .main-title h2,
+  .main .section05 .center strong {
     font-size: 27px !important;
   }
+
+  .main .section04 .main-title h2 {
+    margin-bottom: 32px;
+  }
+  
   
   .main .banner {
     text-align: center;
@@ -672,7 +720,7 @@
   }
 
   .main .banner .banner-text {
-    padding: 0 50px;
+    padding: 0 40px;
   }
 
   .main .fulfillment .center {
@@ -689,7 +737,7 @@
   }
 
   .main .section03 .list li {
-    padding: 40px 0 0 40px;
+    padding: 34px 0 0 28px;
     height: 180px;
   }
 
@@ -713,19 +761,20 @@
   }
 
   .main .section02 .main-title p {
-    font-size: 16px;
-    margin-bottom: 50px;
+    font-size: 17px;
+    margin-bottom: 32px;
   }
 }
 
 
 @media screen and (max-width: 420px) {
   .main .banner h1 {
-    font-size: 30px;
+    font-size: 36px;
+    line-height: 1.4;
   }
 
   .main .banner p {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .main .main-title h2 {

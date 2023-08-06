@@ -2,8 +2,8 @@ const Section03 = () => (
   <section className="section05">
     <div className="center">
       <div className="main-title">
-        <span className="sub-top-text">TRUST MKM</span>
-        <h2>
+        <span className="sub-top-text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0">TRUST MKM</span>
+        <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
           고객의 성공이 우리의 행복이라 믿는 
           <strong>
             MKM 경영철학
@@ -13,7 +13,7 @@ const Section03 = () => (
 
       <div className="trust">
         <ul>
-          <li>
+          <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">
             <div className="imgbox">
               <div className="img">
                 <img src="/images/intro/company08.png" />
@@ -27,7 +27,7 @@ const Section03 = () => (
               </p>
             </div>
           </li>
-          <li>
+          <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
             <div className="imgbox">
               <div className="img">
                 <img src="/images/intro/company09.png" />
@@ -41,7 +41,7 @@ const Section03 = () => (
               </p>
             </div>
           </li>
-          <li>
+          <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
             <div className="imgbox">
               <div className="img">
                 <img src="/images/intro/company10.png" />

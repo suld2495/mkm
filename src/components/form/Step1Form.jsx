@@ -31,7 +31,7 @@ const Step1Form = () => {
   }, [setStep1State]);
 
   return (
-    <div className="form">
+    <div className="form wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
       <form onSubmit={handleSubmit(submit)}>
         <div className="form-item select">
           <label className="label">상품분류</label>
