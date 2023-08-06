@@ -523,11 +523,11 @@
 
 @keyframes updown {
   from {
-    background-position-y: 0;
+    background-position-y: 100%;
   }
 
   to {
-    background-position-y: -40px;
+    background-position-y: calc(100% - 40px);
   }
 }
 

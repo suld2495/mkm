@@ -227,7 +227,7 @@
 @media screen and (max-width: 1300px) {
 
   .intro .section01 .left > div p {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -311,8 +311,12 @@
     font-weight: 500;
   }
 
+  .sub01 {
+    gap: 35px;
+}
+
   .sub01 .img + div p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
