@@ -559,9 +559,17 @@
   .main .section03 .list li strong {
     font-size: 28px;
 }
+
+  .main .section05 .center h2 {
+    line-height: 0.9;
+}
   
 
   .main .section03 {
+    padding: 60px 0 70px 0;
+}
+
+  .main .section05 {
     padding: 60px 0 70px 0;
 }
   

@@ -18,18 +18,18 @@ const Section02 = () => {
     <section className="section02">
       <div className="center">
         <div className="main-title">
-          <h2>
+          <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="">
             <strong>
               매출 상승으로 연결되는<br/>
               확실한 풀필먼트
             </strong>
           </h2>
-          <p>엠키에임은 풀필먼트는 <strong>눈에 보이는 변화를 약속</strong>합니다!</p>
+          <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">엠케이엠은 풀필먼트는 <strong>눈에 보이는 변화를 약속</strong>합니다!</p>
         </div>
         <ul className="list">
           {
             list.map((value, index) => (
-              <li key={index} className={`${active === index ? 'active' : ''}`}>
+              <li key={index} className={`${active === index ? 'active' : ''} wow fadeInUp`} data-wow-duration="1.5s" data-wow-delay={`${0.2 * (index + 2)}s`}>
                 <span className="number">{`0${index + 1}`}</span>
                 <span className="title">{value}</span>
               </li>

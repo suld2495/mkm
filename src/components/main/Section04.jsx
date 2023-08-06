@@ -13,7 +13,7 @@ const Section04 = () => {
     <section className="section04">
       <div className="center">
         <div className="main-title">
-          <h2>
+          <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="">
             <strong>
               <span>
                 빠르고 정확한 
@@ -25,7 +25,7 @@ const Section04 = () => {
         <ul className="list">
           {
             list1.map((value, index) => (
-              <li key={index}>
+              <li key={index} className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay={`${0.3 * (index + 1)}s`}>
                 <img src={`/images/main/${value.img}`} alt="이미지" />
                 <div>
                   <span>{value.span}</span>
@@ -37,7 +37,7 @@ const Section04 = () => {
         </ul>
 
         <div className="main-title">
-          <h2>
+          <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="">
             <strong>
               <span>
                 꼼꼼하고 확실한 
@@ -49,7 +49,7 @@ const Section04 = () => {
         <ul className="list">
           {
             list2.map((value, index) => (
-              <li key={index}>
+              <li key={index} className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay={`${0.3 * (index + 1)}s`}>
                 <img src={`/images/main/${value.img}`} alt="이미지" />
                 <div>
                   <span>{value.span}</span>

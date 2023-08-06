@@ -10,18 +10,18 @@ const Section03 = () => {
     <section className="section03">
       <div className="center">
         <div className="main-title">
-          <h2>
+          <h2 className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="">
             <strong>
               물류 걱정을 지우는<br/>
               <span>MKM SOLUTION</span>
             </strong>
           </h2>
-          <p>엠키에임은 풀필먼트는 <strong>눈에 보이는 변화를 약속</strong>합니다!</p>
+          <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">엠케이엠은 풀필먼트는 <strong>눈에 보이는 변화를 약속</strong>합니다!</p>
         </div>
         <ul className="list">
           {
             list.map((value, index) => (
-              <li key={index}>
+              <li key={index} className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay={`${0.3 * (index + 1)}s`}>
                 <div>
                   <span>{value.span}</span>
                   <strong>{value.strong}</strong>
