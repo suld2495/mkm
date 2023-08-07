@@ -16,7 +16,7 @@
 }
 
 .solution .section02 .main-title .color {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .solution .section02 {
@@ -30,15 +30,15 @@
   gap: 55px;
 }
 
+
+.solution .section06 .main-title h2 strong {
+  margin-left: 5px;
+}
+
 .solution .section02 .content ul li {
   width: calc(20%);
   border-radius: 10px;
   position: relative;
-}
-
-
-.solution .section06 .main-title h2 strong {
-  margin-left: 5px;
 }
 
 .solution .section02 .content ul li:not(:last-child):after {
@@ -116,7 +116,7 @@
 }
 
 .solution .section03 .main-title .color {
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 .solution .section03 .main-title p {
