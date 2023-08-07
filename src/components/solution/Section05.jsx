@@ -29,7 +29,7 @@ const Section05 = () => (
             <div>상품 품질 관리</div>
             <div>
               <img src="/images/solution/solution10.png" />
-              <p>상품 풀질 유지를 위한 관리 체계와 <strong>반품 확인 작업을 철저히</strong>합니다.</p>
+              <p>상품 품질 유지를 위한 관리 체계와 <strong>반품 확인 작업을 철저히</strong>합니다.</p>
             </div>
           </li>
           <li className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">

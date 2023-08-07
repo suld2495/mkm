@@ -17,15 +17,15 @@ const Footer = () => {
                 <span className="title">대표자.</span><span>최주용</span>
               </div>
               <div>
-                <span className="title">사업자등록번호.</span><span>668-88-02765</span>
+                <span className="title">사업자등록번호.</span><span>668-88-02762</span>
               </div>
             </div>
             <div>
               <div>
-                <span className="title">TEL.</span><span>070-4571-6540</span>
+                <span className="title">TEL.</span><span>070-7727-0824</span>
               </div>
               <div>
-                <span className="title">FAX.</span><span>0504-480-7982</span>
+                <span className="title">FAX.</span><span>031-624-0824</span>
               </div>
               <div>
                 <span className="title">E-Mail.</span><span>mkmcorp@naver.com</span>
@@ -39,7 +39,7 @@ const Footer = () => {
             <div>고객센터</div>
             <div>
               <span>상담번호</span>
-              <span>070-4571-6540</span>
+              <span>070-7727-0824</span>
             </div>
             <div>
               <span>운영시간</span>

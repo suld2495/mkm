@@ -13,7 +13,7 @@ const Section03 = () => (
       <Link to="/customer" className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">Click</Link>
       <p className="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
         엠케이엠 풀필먼트 서비스에 관한 문의는<br/>
-        고객센터 070-4571-6540 또는 견적안내 1:1 문의를 이용해 주세요.
+        고객센터 070-7727-0824 또는 견적안내 1:1 문의를 이용해 주세요.
       </p>
     </div>
   </section>

@@ -36,6 +36,11 @@
   position: relative;
 }
 
+
+.solution .section06 .main-title h2 strong {
+  margin-left: 5px;
+}
+
 .solution .section02 .content ul li:not(:last-child):after {
   content: '';
   position: absolute;

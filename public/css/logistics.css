@@ -113,6 +113,10 @@
   display: inline-block;
 }
 
+.short-term .bigger-slide .content ul + p strong {
+  margin-left: 4px;
+}
+
 
 .apparel .section02 .content ul li:nth-child(1) {
   background: url(/images/apparel/clothing04.png) no-repeat center / cover;

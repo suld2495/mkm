@@ -4,7 +4,7 @@ const Section01 = () => (
       <h2 className="wow fadeInUp">
         <strong>
           고객은 언제나 바쁘니까<span className="gmarket">,</span><br />
-          물류 배송의 모든 것 엠케이엠에 맡기세오.
+          물류 배송의 모든 것 엠케이엠에 맡기세요.
         </strong>
       </h2>
       <p className="wow fadeInUp">

@@ -17,8 +17,8 @@ const Section01 = () => (
             단순한 물류 서비스를 넘어 성공적인 사업 파트너가 되기 위한 우리의 철학입니다.
           </p>
           <p className="sub-text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
-            임직원이 사명감과 자부심으로 모두의 성고을 완성하는 풀필먼트 플랫폼, MKM <br/>
-            <strong>빠르고, 바르게. 우리가 집중하는 성장의 가치</strong>입니다. 
+            임직원이 사명감과 자부심으로 모두의 성공을 완성하는 풀필먼트 플랫폼, MKM <br/>
+            <strong>빠르고, 바르게 우리가 집중하는 성장의 가치</strong>입니다. 
           </p>
         </div>
       </div>
