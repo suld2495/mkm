@@ -34,8 +34,8 @@ const Banner = () => {
           엠케이엠 풀필먼트
         </h1>
         <p>
-          이부분은 작은 글자도 넣으면 좋을것 같습니다.<br />
-          사이즈 참고 글자수 참고해주세요.
+          고객사와 동반성장할수있도록<br/>
+          엠케이엠풀필먼드는 &apos;같이&apos;의 &apos;가치&apos;에 집중합니다.
         </p>
         <div className="scrollDown">
           <p className="down">Scroll Down</p>

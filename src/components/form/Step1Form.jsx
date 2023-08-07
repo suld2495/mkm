@@ -38,13 +38,14 @@ const Step1Form = () => {
     <div className="form wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
       <form onSubmit={handleSubmit(submit)}>
         <div className="form-item select">
-          <label className="label">상품분류</label>
+          <label className="label">상품유형</label>
           <div className="input">
             <select className="product-type" {...register('producttype', { required: true })}>
-              <option>상품종류를 선택해주세요.</option>
-              <option>상품1</option>
+              <option>상품유형을 선택해주세요.</option>
+              <option>상온</option>
+              <option>냉장냉동</option>
             </select>
-            {errors.producttype && <div className="errors">상품종류를 선택해주세요.</div>}
+            {errors.producttype && <div className="errors">상품유형을 선택해주세요.</div>}
           </div>
         </div>
         <div className="form-item checkbox">
