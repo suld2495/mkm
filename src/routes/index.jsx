@@ -11,8 +11,10 @@ import Apparel from '../pages/Apparel.jsx';
 import Counseling from '../pages/Counseling.jsx';
 import Estimate from '../pages/Estimate.jsx';
 import Solution from '../pages/Solution.jsx';
+import adminRoutes from './admin.jsx';
 
 const routes = [
+  ...adminRoutes,
   {
     path: '/',
     element: <Layout><Main /></Layout>,

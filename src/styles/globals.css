@@ -30,3 +30,8 @@ button {
 .gmarket {
   font-family: 'GmarketSansMedium', sans-serif;
 }
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 1000;
+}
