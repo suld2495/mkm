@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import WOW from 'wow.js';
 import ModalBox from '../common/CustomModal';
 import { useLocation } from 'react-router-dom';
@@ -8,6 +8,7 @@ import { loadingState } from '../../store/loading';
 import Loading from '../common/Loading';
 
 const InitComponent = () => {
+  const [visible, setVisible] = useState(false);
   const loading = useRecoilValue(loadingState);
   const setNav = useSetRecoilState(navState);
   const { pathname } = useLocation();
@@ -18,10 +19,36 @@ const InitComponent = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     setNav(false);
+    setVisible(false);
   }, [pathname, setNav]);
+
+  const scroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setVisible(false);
+  };
+
+  useEffect(() => {
+    const wheel = () => {
+      setVisible(window.scrollY > 500);
+    };
+
+    window.addEventListener('wheel', wheel);
+
+    return () => {
+      window.removeEventListener('wheel', wheel);
+    }
+  }, []);
 
   return (
     <>
+      {
+        visible && (
+          <div onClick={scroll} className="top" />
+        )
+      }
       <ModalBox />
       {
         loading && <Loading />

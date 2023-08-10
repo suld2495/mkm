@@ -163,6 +163,7 @@
 
 .admin table tbody tr {
     height: 53px;
+    line-height: 53px;
 }
 
 .admin table tbody tr td {

@@ -35,7 +35,7 @@ const AdminCounseling = () => {
       label: '이메일'
     },
     {
-      key: 'product',
+      key: 'productStr',
       label: '상품정보'
     },
     {
