@@ -4,16 +4,21 @@ import AdminLayout from "./AdminLayout";
 import AdminNav from "./AdminNav";
 import useAuth from "../../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { adminState } from "../../store/admin";
 
 const AdminMainLayout = ({ children }) => {
+  const adminValue = useRecoilValue(adminState);
   const { user } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!adminValue) return;
+
     if (!user.data) {
       navigate('/');
     }
-  }, [user.data, navigate]);
+  }, [user.data, adminValue, navigate]);
   return (
     <div className="admin">
       <AdminNav />

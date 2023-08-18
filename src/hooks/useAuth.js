@@ -1,8 +1,11 @@
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import * as authApi from '../services/api/auth.api';
 import { getRefreshToken, saveToken, saveAccessToken, clearToken } from '../services/api';
+import { useSetRecoilState } from "recoil";
+import { adminState } from "../store/admin";
 
 const useAuth = () => {
+  const setAdminState = useSetRecoilState(adminState);
   const queryClient = useQueryClient();
   const user = useQuery({
     queryKey: ['user'],
@@ -10,6 +13,8 @@ const useAuth = () => {
       const response = await authApi.refresh(getRefreshToken());
       const { token } = response.headers;
       saveAccessToken(token);
+      queryClient.setQueryData(['user'], response.data);
+      setAdminState(true);
       return response.data;
     },
 
