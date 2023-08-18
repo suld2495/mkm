@@ -16,7 +16,7 @@ const AdminLogin = () => {
   const submit = async (data) => {
     try {
       await login.mutateAsync(data);
-      navigation('/');
+      navigation('/admin');
     } catch {
       setError('id', {});
     }

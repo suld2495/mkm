@@ -11,6 +11,7 @@ const useCustomer = (type, id) => {
 
     keepPreviousData: true,
     enabled: type === 'counseling-list',
+    retry: 0,
   });
 
   const counseling = useQuery({
@@ -22,6 +23,7 @@ const useCustomer = (type, id) => {
     },
 
     enabled: type === 'counseling',
+    retry: 0,
   });
 
   const estimateList = useQuery({
@@ -33,6 +35,7 @@ const useCustomer = (type, id) => {
 
     keepPreviousData: true,
     enabled: type === 'estimate-list',
+    retry: 0,
   });
 
   const estimate = useQuery({
@@ -44,6 +47,7 @@ const useCustomer = (type, id) => {
     },
 
     enabled: type === 'estimate',
+    retry: 0,
   });
 
   const saveEstimate = useMutation({

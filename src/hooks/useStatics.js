@@ -7,7 +7,8 @@ const useStatics = () => {
     async queryFn() {
       const response = await staticsApi.getStatics();
       return response.data;
-    }
+    },
+    retry: 0,
   });
 
   const search = useMutation({
