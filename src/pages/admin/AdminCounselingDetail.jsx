@@ -40,7 +40,7 @@ const AdminCounselingDetail = () => {
   return (
     <div className="admin-customer admin-counseling">
       <div>
-        <h1>간편상담 상세보기</h1>
+        <h1 className="main-title">간편상담 상세보기</h1>
       </div>
       <GridView props={props} data={counseling.counseling.data} />
       <Link to="/admin/counseling" className="list">목록</Link>

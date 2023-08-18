@@ -400,6 +400,21 @@ img {
   top: 21px;
 }
 
+.react-date-picker {
+  width: 120px;
+}
+
+.react-date-picker input {
+  width: 100%;
+  min-height: 45px;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  background: #fff;
+  box-sizing: border-box;
+  display: flex;
+  padding-left: 12px;
+}
+
 @media screen and (max-width: 1300px) {
   .sub01 > div {
     flex: 1;

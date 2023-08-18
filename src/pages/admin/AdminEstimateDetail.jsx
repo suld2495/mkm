@@ -84,7 +84,7 @@ const AdminCounselingDetail = () => {
   return (
     <div className="admin-customer admin-estimate">
       <div>
-        <h1>물류견적 상세보기</h1>
+        <h1 className="main-title">물류견적 상세보기</h1>
       </div>
       <h2>기본정보 입력</h2>
       <GridView props={props} data={customer.estimate.data} />

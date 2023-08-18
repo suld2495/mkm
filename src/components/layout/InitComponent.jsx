@@ -6,12 +6,15 @@ import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { navState } from '../../store/nav';
 import { loadingState } from '../../store/loading';
 import Loading from '../common/Loading';
+import useAuth from '../../hooks/useAuth';
 
 const InitComponent = () => {
   const [visible, setVisible] = useState(false);
   const loading = useRecoilValue(loadingState);
   const setNav = useSetRecoilState(navState);
   const { pathname } = useLocation();
+  const auth = useAuth();
+
   useEffect(() => {
     new WOW().init();
   }, []);
@@ -36,6 +39,8 @@ const InitComponent = () => {
     };
 
     window.addEventListener('wheel', wheel);
+
+    auth.visite.mutate();
 
     return () => {
       window.removeEventListener('wheel', wheel);

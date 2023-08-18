@@ -3,6 +3,14 @@
   display: flex;
 }
 
+.admin h1.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 43px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #878787;
+}
+
 .admin > nav {
   width: 250px;
   background: #364153;
@@ -22,6 +30,10 @@
   background: var(--main-color);
 }
 
+.admin li.main-nav {
+    overflow: hidden;
+}
+
 .admin > nav .main-nav > span {
   height: 60px;
   padding-inline: 30px;
@@ -30,11 +42,24 @@
   color: #fff;
   font-weight: 500;
   font-size: 17px;
+  border-bottom: 1px solid #222d3f;
+  position: relative;
+}
+
+.admin > nav .main-nav > span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
   background-image: url(/images/admin/customer/down_icon.png);
   background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: calc(100% - 30px);
-  border-bottom: 1px solid #222d3f;
+  background-position: center;
+  right: 10px;
+}
+
+.admin > nav .main-nav.on > span:after {
+  transform: rotate(-180deg);
 }
 
 .admin > nav .main-nav > span i {
@@ -49,12 +74,22 @@
   background-image: url(/images/admin/customer/cs_icon_off.png);
 }
 
+.admin > nav .main-nav:nth-child(2) i {
+  background-image: url(/images/admin/customer/statistics_icon.png);
+}
+
 .admin > nav .main-nav ul {
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
   background: #202b3d;
+  height: auto;
+  max-height: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+.admin > nav .main-nav.on ul {
+  max-height: 100vh;
 }
 
 .admin > nav .main-nav ul a {
@@ -66,6 +101,18 @@
   position: relative;
   transition: all 0.3s ease;
   box-sizing: border-box;
+}
+
+.admin > nav .main-nav ul li {
+  padding: 20px 0;
+}
+
+.admin > nav .main-nav ul li.active a {
+  color: var(--main-color);
+}
+
+.admin > nav .main-nav ul li.active a:before {
+  background: var(--main-color);
 }
 
 .admin > nav .main-nav ul a:before {
@@ -159,11 +206,17 @@
     height: 500px;
     vertical-align: middle;
     text-align: center;
+    width: 100%;
+    line-height: 500px;
 }
 
 .admin table tbody tr {
     height: 53px;
     line-height: 53px;
+}
+
+.admin table tbody tr.empty {
+    height: 500px;
 }
 
 .admin table tbody tr td {

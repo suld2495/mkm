@@ -43,16 +43,16 @@ const AdminCounseling = () => {
       label: '상담내용',
       component: (item) => <Link to={`/admin/estimate/${item?.seq}`} className="detail">상세보기</Link>
     },
-    {
-      key: 'delete',
-      label: '삭제',
-      component: (item) => <button className="delete" onClick={() => deleteCounseling(item.seq)}><img src="/images/admin/customer/delete_icon.png" /></button>
-    }
+    // {
+    //   key: 'delete',
+    //   label: '삭제',
+    //   component: (item) => <button className="delete" onClick={() => deleteCounseling(item.seq)}><img src="/images/admin/customer/delete_icon.png" /></button>
+    // }
   ];
 
-  const deleteCounseling = (num) => {
+  // const deleteCounseling = (num) => {
 
-  }
+  // }
 
   const move = (page) => {
     setCurrentPageValue(page);
@@ -77,7 +77,7 @@ const AdminCounseling = () => {
   return (
     <div className="admin-customer admin-estimate">
       <div>
-        <h1>물류견적 목록</h1>
+        <h1 className="main-title">물류견적 목록</h1>
       </div>
       <Table props={props} data={list}/>
       <Pagination page={currentPageValue} total={total} perPage={PER_PAGE} move={move} />

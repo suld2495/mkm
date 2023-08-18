@@ -6,6 +6,7 @@ import AdminCounselingDetail from "../pages/admin/AdminCounselingDetail.jsx";
 import AdminEstimate from "../pages/admin/AdminEstimate.jsx";
 import AdminEstimateDetail from "../pages/admin/AdminEstimateDetail.jsx";
 import AdminLogin from "../pages/admin/AdminLogin.jsx";
+import AdminStatics from "../pages/admin/AdminStatics.jsx";
 
 const routes = [
   {
@@ -31,6 +32,10 @@ const routes = [
   {
     path: '/admin/estimate/:id',
     element: <AdminMainLayout><AdminEstimateDetail /></AdminMainLayout>,
+  },
+  {
+    path: '/admin/statics',
+    element: <AdminMainLayout><AdminStatics /></AdminMainLayout>,
   },
 ];
 

@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import { useEffect } from "react";
 
 const AdminLogin = () => {
-  const { login } = useAuth();
+  const { login, user } = useAuth();
   const navigation = useNavigate();
   const {
     register,
@@ -17,9 +18,15 @@ const AdminLogin = () => {
       await login.mutateAsync(data);
       navigation('/');
     } catch {
-      setError('email', {});
+      setError('id', {});
     }
   };
+
+  useEffect(() => {
+    if (user.data) {
+      navigation('/admin');
+    }
+  }, [user.data, navigation]);
   
   return (
     <div className="admin-login">
@@ -41,14 +48,13 @@ const AdminLogin = () => {
           <form onSubmit={handleSubmit(submit)}>
             <div className="input">
               <i className="user" />
-              <input type="password" {...register('id', { required: true })} placeholder="아이디를 입력하세요." />
+              <input type="text" {...register('id', { required: true })} placeholder="아이디를 입력하세요." />
             </div>
             <div className="input">
               <i className="password" />
               <input type="password" {...register('password', { required: true })} placeholder="비밀번호를 입력하세요." />
             </div>
-            {errors.id || errors.password && <div className="errors">아이디 또는 비밀번호를 확인하세요.</div>}
-
+            {(errors.id || errors.password) && <div className="errors">아이디 또는 비밀번호를 확인하세요.</div>}
             <button>로그인</button>
           </form>
         </div>
