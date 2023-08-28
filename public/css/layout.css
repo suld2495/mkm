@@ -428,6 +428,15 @@ footer .customer > div + div {
   font-size: 25pt;
 }
 
+.header .right {
+  display: flex;
+  align-items: center;
+}
+
+.header .right .talk_banner_div {
+  z-index: 100;
+}
+
 @media screen and (max-width: 1300px) {
   footer.footer {
     padding-inline: 20px !important;

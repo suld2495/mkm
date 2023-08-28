@@ -17,7 +17,7 @@ const Header = () => {
     }, 100);
 
     window.addEventListener('scroll', wheelHandler);
-
+    window.requestTalkBannerInfo();
     return () => {
       window.removeEventListener('wheel', wheelHandler);
     };
@@ -37,10 +37,13 @@ const Header = () => {
         </Link>
       </div>
       <Nav />
-      <div className="line-btn" onClick={() => setNav((prev) => !prev)}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="right">
+        <div className="talk_banner_div" data-id="135892"></div>
+        <div className="line-btn" onClick={() => setNav((prev) => !prev)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
       {
