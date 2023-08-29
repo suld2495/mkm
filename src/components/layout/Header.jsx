@@ -17,7 +17,7 @@ const Header = () => {
     }, 100);
 
     window.addEventListener('scroll', wheelHandler);
-    window.requestTalkBannerInfo();
+    window.requestTalkBannerInfo?.();
     return () => {
       window.removeEventListener('wheel', wheelHandler);
     };
